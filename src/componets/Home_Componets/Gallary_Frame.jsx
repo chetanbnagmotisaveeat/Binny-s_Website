@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import '../../styles/Home.css'
+import SwiperComponet from '../../Helpers/SwiperComponet';
 
 const Gallary_Frame = () => {
   return (
@@ -12,11 +13,10 @@ const Gallary_Frame = () => {
     breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
     minBreakpoint="xxs"
   >
-    <Container fluid className='p-0 m-0 position-relative  w-100' style={{ height: '100vh' }}>
+    <Container fluid className='p-0 m-0 position-relative  w-100'>
       <Row className='p-0 m-0 '>
         <Col xs={12} md={12} lg={12} className="position-relative p-0 m-0">
-         
-       
+        <SwiperComponet /> 
         </Col>
       </Row>
     </Container>

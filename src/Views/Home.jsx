@@ -14,7 +14,7 @@ import Col from 'react-bootstrap/Col';
 const Home = () => {
   return (
     <>
-    <Container fluid className='p-0 m-0 '>
+    <Container fluid className='p-0 m-0 bg-dark'>
       <Video_Frame />
       <About_Frame />
       <Experties_Frame />
