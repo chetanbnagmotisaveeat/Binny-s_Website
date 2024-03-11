@@ -32,10 +32,10 @@ const SwiperComponet = () => {
           disableOnInteraction: false,
         }}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        // navigation={true}
         modules={[Autoplay,EffectCoverflow, Pagination,Navigation]}
         className="mySwiper "
       >

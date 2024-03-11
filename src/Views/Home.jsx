@@ -9,11 +9,14 @@ import Footer from '../componets/Home_Componets/Footer'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Header from '../Helpers/Header'
+
 
 
 const Home = () => {
   return (
     <>
+    <Header />
     <Container fluid className='p-0 m-0 bg-dark'>
       <Video_Frame />
       <About_Frame />

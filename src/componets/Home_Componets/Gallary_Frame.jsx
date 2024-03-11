@@ -15,7 +15,7 @@ const Gallary_Frame = () => {
   >
     <Container fluid className='p-0 m-0 position-relative  w-100'>
       <Row className='p-0 m-0 '>
-        <Col xs={12} md={12} lg={12} className="position-relative p-0 m-0">
+        <Col xs={12} md={12} lg={12} className="position-relative p-0 m-0" >
         <SwiperComponet /> 
         </Col>
       </Row>
