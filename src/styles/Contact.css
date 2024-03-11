@@ -1,0 +1,132 @@
+.home-heading {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.home-subContent{
+        font-family: Karla;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left; 
+        color: #FFFFFF;  
+    
+}
+
+@media (max-width: 576px) { /* Small devices (phones) */
+    .home-subContent {
+        font-size: 15px;
+    }
+    .home-heading{
+        font-size: 28px;
+        line-height: 25.2px;
+        
+       
+    }
+    .home-about-col-pading{
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+    }
+    .home-about-main-div-margin-top{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .home-main-div-margin-bottom-and-top{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (min-width: 577px) and (max-width: 768px) { /* Medium devices (tablets) */
+    .home-subContent {
+        font-size: 18px;
+    }
+    .home-heading{
+        font-size: 32px; 
+        line-height: 28.8px; 
+       
+    }
+    .home-about-col-pading{
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    .home-about-main-div-margin-top{
+        margin-top: 45px;
+        margin-bottom: 22.5px;
+    }
+    .home-main-div-margin-bottom-and-top{
+        margin-top:22.5px;
+        margin-bottom: 22.5px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 850px) { /* Medium devices (tablets) */
+    .home-subContent {
+        font-size: 18px;
+    }
+    .home-heading{
+        font-size: 32px; 
+        line-height: 28.8px;
+       
+         
+    }
+    .home-about-col-pading{
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    .home-about-main-div-margin-top{
+        margin-top: 65px;
+        margin-bottom: 32.5px;
+    }
+    .home-main-div-margin-bottom-and-top{
+        margin-top:32.5px;
+        margin-bottom: 32.5px;
+    }
+}
+
+@media (min-width: 850px) { /* Large devices (laptops/desktops) */
+    .home-subContent {
+        font-size: 20px;
+    }
+    .home-heading{
+        font-size: 48px;
+        line-height: 43.2px;
+        
+    }
+    .home-about-col-pading{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .home-about-main-div-margin-top{
+        margin-top: 76px;
+        margin-bottom: 38px;
+    }
+    .home-main-div-margin-bottom-and-top{
+        margin-top:38px;
+        margin-bottom: 38px;
+    }
+}
+
+
+.form-control {
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent !important;
+    border: 1px solid white;
+    padding-left: 10px;
+    color: #FFFFFF;
+}
+
+.form-control-text-area {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding-left: 10px;  
+}
