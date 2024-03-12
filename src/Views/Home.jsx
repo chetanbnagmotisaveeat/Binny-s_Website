@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
    
-    <Container fluid className='p-0 m-0 bg-dark'>
+    <Container fluid className='p-0 m-0' style={{backgroundColor:'#101010'}}>
       <Video_Frame />
       <About_Frame />
       <Experties_Frame />

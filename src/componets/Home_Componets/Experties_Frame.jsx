@@ -30,7 +30,7 @@ const Experties_Frame = () => {
               lg={6}
               className="order-2 order-md-1 home-about-col-pading border border-1 border-primary"
             >
-              <div className="text-left d-flex flex-column justify-content-center align-items-center home-subContent h-100">
+              <div className="text-left d-flex flex-column justify-content-center align-items-center home-subContent home-main-div-margin-bottom-and-top">
                 <p>
                   Explore Binny's exquisite collections, where timeless elegance
                   meets contemporary craftsmanship. Discover a curated selection

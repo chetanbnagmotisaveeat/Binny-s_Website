@@ -15,7 +15,7 @@ const Header = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
-    
+
 
     const handleCollectionClick = () => {
         setClickedCollection(!clickedCollection);
@@ -29,7 +29,7 @@ const Header = () => {
     };
 
     const handleRubberBraceletsClick = () => {
-        setRubberBracelets(!rubberBracelets);    
+        setRubberBracelets(!rubberBracelets);
     };
 
     const handleWomenJewelleryClick = () => {
@@ -38,7 +38,7 @@ const Header = () => {
 
     const handleMenJewelleryClick = () => {
         setMenJewellery(!menJewellery);
-       
+
     };
 
     const handleAccessoriesClick = () => {
@@ -52,10 +52,10 @@ const Header = () => {
         setAccessories(false);
         setRubberBracelets(false);
         setShow(true)
-        
+
     };
 
-    
+
 
     return (
         <>
@@ -80,15 +80,15 @@ const Header = () => {
                                 placement="start"
                                 className='text-white'
                                 show={show}
-                                
-                                
+
+
                             >
                                 <Offcanvas.Header closeButton />
                                 <Offcanvas.Body>
                                     <Nav className="justify-content-end flex-grow-1 pe-3">
                                         {!clickedCollection && (
                                             <>
-                                               <CustomNavLink to="/" onClick={handleClose}>Home</CustomNavLink>
+                                                <CustomNavLink to="/" onClick={handleClose}>Home</CustomNavLink>
                                             </>
                                         )}
                                         {!rubberBracelets && !womenJewellery && !menJewellery && !accessories && (
@@ -109,7 +109,7 @@ const Header = () => {
                                                 <CustomNavLink to="/store-locator" onClick={handleClose}>Store locator</CustomNavLink>
                                                 <CustomNavLink to="/book-an-appointment" onClick={handleClose}>Book an Appointment</CustomNavLink>
                                                 <CustomNavLink to="/careers" onClick={handleClose}>Careers</CustomNavLink>
-                                                
+
                                             </>
                                         )}
                                         {clickedCollection && (
@@ -192,33 +192,33 @@ const Header = () => {
                                         {
                                             womenJewellery && (
                                                 <>
-                                                     <CustomNavLink to="/nacklace" onClick={handleClose}>Nacklace</CustomNavLink>
-                                                     <CustomNavLink to="/earrings" onClick={handleClose}>Earrings</CustomNavLink>
-                                                     <CustomNavLink to="/rings" onClick={handleClose}>Rings</CustomNavLink>
-                                                     <CustomNavLink to="/pendants" onClick={handleClose}>Pendants</CustomNavLink>
-                                                     <CustomNavLink to="/bracelets" onClick={handleClose}>Bracelets</CustomNavLink>
-                                                     <CustomNavLink to="/magal-sutra" onClick={handleClose}>Magal Sutra</CustomNavLink>
-                                                     <CustomNavLink to="/brooches" onClick={handleClose}>Brooches</CustomNavLink>
-                                                  
+                                                    <CustomNavLink to="/nacklace" onClick={handleClose}>Nacklace</CustomNavLink>
+                                                    <CustomNavLink to="/earrings" onClick={handleClose}>Earrings</CustomNavLink>
+                                                    <CustomNavLink to="/rings" onClick={handleClose}>Rings</CustomNavLink>
+                                                    <CustomNavLink to="/pendants" onClick={handleClose}>Pendants</CustomNavLink>
+                                                    <CustomNavLink to="/bracelets" onClick={handleClose}>Bracelets</CustomNavLink>
+                                                    <CustomNavLink to="/magal-sutra" onClick={handleClose}>Magal Sutra</CustomNavLink>
+                                                    <CustomNavLink to="/brooches" onClick={handleClose}>Brooches</CustomNavLink>
+
                                                 </>
                                             )
                                         }
                                         {
                                             menJewellery && (
-                                                <>  
-                                                     <CustomNavLink to="/bracelets" onClick={handleClose}>Bracelets</CustomNavLink>
-                                                     <CustomNavLink to="/rings" onClick={handleClose}>Rings</CustomNavLink>
-                                                     <CustomNavLink to="/chains" onClick={handleClose}>Chains</CustomNavLink>
-                                                     <CustomNavLink to="/cuff-links" onClick={handleClose}>Cuff Links</CustomNavLink>
-                                                     <CustomNavLink to="/brooches" onClick={handleClose}>Brooches</CustomNavLink>
-                                                   
+                                                <>
+                                                    <CustomNavLink to="/bracelets" onClick={handleClose}>Bracelets</CustomNavLink>
+                                                    <CustomNavLink to="/rings" onClick={handleClose}>Rings</CustomNavLink>
+                                                    <CustomNavLink to="/chains" onClick={handleClose}>Chains</CustomNavLink>
+                                                    <CustomNavLink to="/cuff-links" onClick={handleClose}>Cuff Links</CustomNavLink>
+                                                    <CustomNavLink to="/brooches" onClick={handleClose}>Brooches</CustomNavLink>
+
 
                                                 </>
                                             )
                                         }
                                         {
                                             accessories && (
-                                                <>  
+                                                <>
                                                     <CustomNavLink to="/watch" onClick={handleClose}>Watch</CustomNavLink>
                                                     <CustomNavLink to="/belt" onClick={handleClose}>Belt</CustomNavLink>
                                                     <CustomNavLink to="/phones" onClick={handleClose}>Phones</CustomNavLink>
