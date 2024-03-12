@@ -6,13 +6,25 @@ import "../../styles/Contact.css";
 import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { modes } from "react-transition-group/SwitchTransition";
+import CustomInputTag from "../../Helpers/CustomInputTag";
 
 const ContactUs_Frame = () => {
-  const { register, formState: { errors }, handleSubmit } = useForm({
+
+   const form=useForm({
     defaultValues: {
       name: '',
       phoneNumber: '',
-      emial: '',
+      email: '',
+      message: ''
+    },
+    mode: 'all'
+  })
+
+  const {register, formState: { errors }, handleSubmit ,reset} = useForm({
+    defaultValues: {
+      name: '',
+      phoneNumber: '',
+      email: '',
       message: ''
     },
     mode: 'all'
@@ -24,6 +36,7 @@ const ContactUs_Frame = () => {
 
   const onSubmit = (data) => {
     console.log(data);
+    reset();
   };
 
   return (
@@ -45,8 +58,9 @@ const ContactUs_Frame = () => {
             
 
           <form onSubmit={handleSubmit(onSubmit)}  >
-            <Row className="d-flex flex-column justify-content-center align-items-center home-main-div-margin-bottom-and-top" >
+            <Row className="p-0 m-0 d-flex flex-column justify-content-center align-items-center mt-5" >
               <Col xs={12} sm={12} md={8} lg={6} className="border border-1 border-primary">
+               
                 <input
                   id="name"
                   name="name"
@@ -78,7 +92,7 @@ const ContactUs_Frame = () => {
                     }
                   })}
                 />
-                {errors.phoneNumber && <p style={{ color: 'blue' }}>{errors.phoneNumber.message}</p>}
+                {errors.phoneNumber && <p style={{ color: 'red' ,paddingLeft:"5px",margin:'0px'}}>{errors.phoneNumber.message}</p>}
               </Col>
               <Col xs={12} sm={12} md={8} lg={6} className="border border-1 border-primary">
                 <input
