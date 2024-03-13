@@ -4,7 +4,33 @@ import Row from "react-bootstrap/Row";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 import { motion } from "framer-motion";
 import "../../styles/Home.css";
-import SwiperComponet from "../../Helpers/SwiperComponet";
+
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import '../../styles/swiperStyle.css';
+
+
+// import required modules
+import { Autoplay, EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+
+const imagesArrya = [
+  { id: 1, url: '../images/Experties/Rectangle-37.png' },
+  { id: 2, url: '../images/Experties/Rectangle-38.png' },
+  { id: 3, url: '../images/Experties/Rectangle-39.png' },
+  { id: 4, url: '../images/Experties/Rectangle-40.png' },
+  { id: 5, url: '../images/Experties/Rectangle-41.png' },
+  { id: 6, url: '../images/Experties/Rectangle-37.png' },
+  { id: 7, url: '../images/Experties/Rectangle-38.png' },
+  { id: 8, url: '../images/Experties/Rectangle-39.png' },
+]
+
 
 const Experties_Frame = () => {
   return (
@@ -61,9 +87,54 @@ const Experties_Frame = () => {
               lg={6}
               className="home-about-col-pading order-1 order-md-2 d-flex justify-content-center align-items-center border border-1 border-primary"
             >
-            
-               <SwiperComponet />
-             
+              <Swiper
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
+                  rotate: 0,
+                  stretch: 1,
+                  depth: 125,
+                  modifier: 2,
+                  slideShadows: true,
+                }}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                // pagination={{
+                //   clickable: true,
+                // }}
+                // navigation={true}
+                modules={[Autoplay, EffectCoverflow, Pagination]}
+                className="mySwiper"
+              >
+                <div>
+                  {
+                    imagesArrya.map((image, index) => {
+                      return (
+                        <>
+                          <SwiperSlide key={image.id + index}>
+                            <img src={image.url}  
+                             style={{
+                              borderRadius: '25px',
+                              height:'350px'
+                            }}
+                            
+                            />
+                          </SwiperSlide>
+                        </>
+                      )
+                    })
+                  }
+
+                </div>
+
+              </Swiper>
+
+
             </Col>
           </Row>
         </div>

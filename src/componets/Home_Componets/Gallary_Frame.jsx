@@ -62,7 +62,7 @@ const Gallary_Frame = () => {
                 delay: 3000,
                 disableOnInteraction: false,
               }}
-              pagination={true}
+              // pagination={true}
               loop={true}
               modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
               className="mySwiper border border-1 border-warning mt-2 mb-2"
