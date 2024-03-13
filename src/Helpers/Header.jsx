@@ -51,7 +51,7 @@ const Header = () => {
         setMenJewellery(false);
         setAccessories(false);
         setRubberBracelets(false);
-        setShow(true)
+        setShow(!show)
 
     };
 
@@ -83,7 +83,7 @@ const Header = () => {
 
 
                             >
-                                <Offcanvas.Header closeButton />
+                                <Offcanvas.Header closeButton  onClick={handleToggleClick}/>
                                 <Offcanvas.Body>
                                     <Nav className="justify-content-end flex-grow-1 pe-3">
                                         {!clickedCollection && (

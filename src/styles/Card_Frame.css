@@ -1,0 +1,170 @@
+.carft-heading {
+    font-family: 'Karla', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 43px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+    color: #FFFFFF;
+}
+
+.carft-subContent{
+        font-family: Karla;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        /* text-align: left;  */
+        color: #FFFFFF;  
+    
+}
+
+
+.btn-larger {
+    width: 250px;
+    height: 65px; 
+    border-radius: '100px';   
+}
+
+@media (max-width: 576px) { /* Small devices (phones) */
+    .carft-subContent {
+        font-size: 12px;
+    }
+    .carft-heading{
+        font-size: 26px;
+        line-height: 33px;
+        
+       
+    }
+    .home-about-col-pading{
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+    }
+    .home-about-main-div-margin-top{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .home-main-div-margin-bottom-and-top{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+    .btn-larger{
+        width: 160px;
+        height: 35px; 
+        border-radius: '100px';   
+    }
+    
+}
+
+@media (min-width: 577px) and (max-width: 768px) { /* Medium devices (tablets) */
+    .carft-subContent {
+        font-size: 18px;
+    }
+    .carft-heading{
+        font-size: 45px; 
+        line-height: 66px; 
+       
+    }
+    .home-about-col-pading{
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    .home-about-main-div-margin-top{
+        margin-top: 45px;
+        margin-bottom: 22.5px;
+    }
+    .home-main-div-margin-bottom-and-top{
+        margin-top:22.5px;
+        margin-bottom: 22.5px;
+    }
+    .btn-larger{
+        width: 200px;
+        height: 40px; 
+        border-radius: '100px';   
+    }
+
+    
+}
+
+@media (min-width: 769px) and (max-width: 850px) { /* Medium devices (tablets) */
+    .carft-subContent {
+        font-size: 18px;
+    }
+    .carft-heading{
+        font-size: 55px; 
+        line-height: 77px;
+       
+         
+    }
+    .home-about-col-pading{
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    .home-about-main-div-margin-top{
+        margin-top: 65px;
+        margin-bottom: 32.5px;
+    }
+    .home-main-div-margin-bottom-and-top{
+        margin-top:32.5px;
+        margin-bottom: 32.5px;
+    }
+    .btn-larger{
+        width: 259px;
+        height: 45px; 
+        border-radius: '100px';   
+    }
+}
+
+@media (min-width: 850px) { /* Large devices (laptops/desktops) */
+    .carft-subContent {
+        font-size: 20px;
+    }
+    .carft-heading{
+        font-size: 60px;
+        line-height: 77px;
+        
+    }
+    .home-about-col-pading{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .home-about-main-div-margin-top{
+        margin-top: 76px;
+        margin-bottom: 38px;
+    }
+    .home-main-div-margin-bottom-and-top{
+        margin-top:38px;
+        margin-bottom: 38px;
+    }
+    .btn-larger{
+        width: 269px;
+        height: 50px; 
+        border-radius: '100px';   
+    }
+}
+
+
+.form-control {
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent !important;
+    border: 1px solid white;
+    padding-left: 10px;
+    color: #FFFFFF;
+}
+
+.form-control-text-area {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding-left: 10px; 
+    color: #FFFFFF; 
+}
+
+.background-image {
+    background-image: url("/images/Carft-Image/Carft.png");
+    background-size: cover;
+    background-position: center;
+}
