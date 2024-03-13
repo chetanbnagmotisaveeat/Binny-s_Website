@@ -60,7 +60,6 @@ const ContactUs_Frame = () => {
           <form onSubmit={handleSubmit(onSubmit)}  >
             <Row className="p-0 m-0 d-flex flex-column justify-content-center align-items-center mt-5" >
               <Col xs={12} sm={12} md={8} lg={6} className="border border-1 border-primary">
-               
                 <input
                   id="name"
                   name="name"
@@ -85,7 +84,10 @@ const ContactUs_Frame = () => {
                   className={`w-100 mt-4 ${errors.phoneNumber && errors.phoneNumber.message ? 'mb-2' : 'mb-4'}`}
                   style={formControl}
                   {...register('phoneNumber', {
-                    required: true,
+                    required: {
+                      value:true,
+                      message:'Please enter Phone Number'
+                    },
                     pattern: {
                       value: phoneRegex,
                       message: 'Please enter a valid phone number'
@@ -138,7 +140,6 @@ const ContactUs_Frame = () => {
                   Submit
                 </Button>
               </Col>
-
             </Row>
           </form>
         </div>
