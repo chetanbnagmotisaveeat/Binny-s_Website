@@ -1,0 +1,31 @@
+.half-circle {
+    position: absolute;
+    top: 50%; /* Vertically center the circle */
+    right:0; /* Align to the right side */
+    width: 500px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    background-color: #000000; /* Change to your desired color */
+    border-radius: 1000px 0 0 1000px; /* This creates a half-circle shape with a diameter of 1000px */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.circle-container {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    overflow: hidden; /* Hides any overflow content */
+    background-color: #000000;
+}
+
+.circle-container img {
+    width: 100%; /* Ensures the image fills the circular container */
+    height: 100%; /* Ensures the image fills the circular container */
+    object-fit: cover; /* Scales the image to cover the circular container */
+}
+
+.decoration-line {
+    border: 2px solid red; /* Adjust border width and color as needed */
+    margin-top: 5px; /* Adjust margin as needed */
+}
+
+  
