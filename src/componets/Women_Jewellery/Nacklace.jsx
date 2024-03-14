@@ -156,8 +156,8 @@ const Nacklace = () => {
                      )
                   }
                  
-                  <div className="col-lg-12 mb-5 mt-5 content-container">
-                    <div style={{ overflowX: "hidden", marginTop: '50px' }}>
+                  <div className="col-lg-12 content-container ">
+                    <div style={{ overflowX: "hidden",minHeight:'200px',overflowY:'hidden' }}>
                       <motion.div
                         key={currentImage.id}
                         initial={{ x: -100, opacity: 0 }}
@@ -169,7 +169,7 @@ const Nacklace = () => {
                       </motion.div>
                     </div>
                   </div>
-                  <div className="col-lg-12 mb-5">
+                  <div className="col-lg-12 mb-3 button-style">
                     <Button variant="outline-light" className='button-subContent outline-none btn-larger' style={{ borderRadius: '100px' }}>
                       Discover More
                     </Button>
@@ -208,8 +208,6 @@ const Nacklace = () => {
               sm={12}
               xs={12}
               className="border border-1 border-primary position-relative order-2 order-md-2 img-col"
-
-
             >
               <motion.div className="half-circle h-100 w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden">
                 {imagesArray.map((image, index) => (
