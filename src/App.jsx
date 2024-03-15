@@ -16,6 +16,7 @@ import Man_Rings from './componets/Men_Jewellery/Rings';
 import Man_Chains from './componets/Men_Jewellery/Chains';
 import Man_Cuff_Links from './componets/Men_Jewellery/Cuff_Links';
 import Man_Brooches from './componets/Men_Jewellery/Brooches';
+import OurTeam from './componets/OurTeam/OurTeam';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route exact path="cuff-links" element={<Man_Cuff_Links />} />
             <Route exact path="brooches" element={<Man_Brooches />} />
           </Route>
+          <Route exact path='our-Team' element={<OurTeam />} />
         </Routes>
         <Footer />
 
