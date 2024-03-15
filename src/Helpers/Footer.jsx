@@ -11,11 +11,11 @@ const Footer = () => {
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
     >
-     <Container fluid className='p-0 m-0 d-flex flex-column position-relative w-100 border border-1 border-primary' style={{ height: '60vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+     <Container fluid className='p-0 m-0 d-flex flex-column position-relative w-100 border border-1 border-primary' style={{ height: '40vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
   <Row className='p-0 m-0 w-75'>
     <Col xs={12} md={12} lg={12} className="d-flex position-relative p-0 m-0 w-100">
       <Container className='border border-1 border-warning' >
-        <Row className='border border-1 border-warning' style={{ height: '25vh' }}>
+        <Row className='border border-1 border-warning' style={{ height: '15vh' }}>
         <Col className='border border-1 border-warning text-light d-flex flex-column justify-content-center'>
   <div className="text-left mb-2">Services</div>
   <div className="text-left">
@@ -44,7 +44,7 @@ const Footer = () => {
                   </div>
           </Col>
         </Row>
-        <Row className='border border-1 border-warning' style={{ height: '25vh' }}>
+        <Row className='border border-1 border-warning' style={{ height: '15vh' }}>
         <Col className='border border-1 border-warning text-light d-flex flex-column justify-content-start align-items-start'>
   <div>Follow Us</div>
   <div className="d-flex align-items-center   w-25" style={{gap:'10px'}}>
