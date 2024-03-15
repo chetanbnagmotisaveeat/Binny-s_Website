@@ -91,7 +91,7 @@
     margin-top: 10px;
 }
 .img-col{
-    height:95vh
+    height:100vh
 }
 
 .half-circle  .image-container img{
@@ -258,7 +258,7 @@
     }
     
     .img-col{
-        height:80vh
+        height:95vh
     }
     
     .half-circle  .image-container img{
@@ -298,7 +298,7 @@
         line-height: 40px;
     }
     .img-col{
-        height:90vh
+        height:95vh
     }
     .half-circle  .image-container img{
         max-width: 100%; 
@@ -314,7 +314,13 @@
     }
 }
  
-
+@media (min-width: 1096px) and (max-width: 1400px)  { 
+   
+    .img-col{
+        height:120vh
+    }
+   
+}
 
 
  
