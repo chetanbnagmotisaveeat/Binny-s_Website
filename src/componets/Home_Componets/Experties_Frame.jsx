@@ -16,23 +16,24 @@ import 'swiper/css/navigation';
 
 import '../../styles/swiperStyle.css';
 
-
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { useMediaQuery } from "react-responsive";
 
 const imagesArrya = [
-  { id: 1, url: '../images/Experties/Rectangle-37.png' },
-  { id: 2, url: '../images/Experties/Rectangle-38.png' },
-  { id: 3, url: '../images/Experties/Rectangle-39.png' },
-  { id: 4, url: '../images/Experties/Rectangle-40.png' },
-  { id: 5, url: '../images/Experties/Rectangle-41.png' },
-  { id: 6, url: '../images/Experties/Rectangle-37.png' },
-  { id: 7, url: '../images/Experties/Rectangle-38.png' },
-  { id: 8, url: '../images/Experties/Rectangle-39.png' },
+  { id: 1, url: '../images/Experties/Image-1.png' },
+  { id: 2, url: '../images/Experties/Image-2.png' },
+  { id: 3, url: '../images/Experties/Image-3.png' },
+  { id: 4, url: '../images/Experties/Image-4.png' },
+  { id: 5, url: '../images/Experties/Image-5.png' },
+  { id: 6, url: '../images/Experties/Image-2.png' },
+  { id: 7, url: '../images/Experties/Image-1.png' },
+  { id: 8, url: '../images/Experties/Image-3.png' },
 ]
 
 
 const Experties_Frame = () => {
+  const isSmallScreen = useMediaQuery({ maxWidth: 764 });
   return (
     <ThemeProvider
       breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
@@ -40,11 +41,11 @@ const Experties_Frame = () => {
     >
       <Container
         fluid
-        className="p-0 m-0 w-100 border border-1 border-primary overflow-hidden"
+        className="p-0 m-0 w-100 overflow-hidden"
       >
         <div className="p-3 home-main-div-margin-bottom-and-top">
           <Row className="p-0 m-0">
-            <Col className="home-heading border border-1 border-parimary">
+            <Col className="home-heading ">
               Expertise
             </Col>
           </Row>
@@ -54,9 +55,9 @@ const Experties_Frame = () => {
               sm={12}
               md={6}
               lg={6}
-              className="order-2 order-md-1 home-about-col-pading border border-1 border-primary"
+              className="order-2 order-md-1 home-about-col-pading "
             >
-              <div className="text-left d-flex flex-column justify-content-center align-items-center home-subContent home-main-div-margin-bottom-and-top">
+              <div className="d-flex flex-column justify-content-center align-items-center home-subContent home-main-div-margin-bottom-and-top" style={isSmallScreen ? { textAlign: 'justify' } : { textAlign: 'justify' }}>
                 <p>
                   Explore Binny's exquisite collections, where timeless elegance
                   meets contemporary craftsmanship. Discover a curated selection
@@ -85,7 +86,7 @@ const Experties_Frame = () => {
               sm={12}
               md={6}
               lg={6}
-              className="home-about-col-pading order-1 order-md-2 d-flex justify-content-center align-items-center border border-1 border-primary"
+              className="home-about-col-pading order-1 order-md-2 d-flex justify-content-center align-items-center"
             >
               <Swiper
                 effect={'coverflow'}

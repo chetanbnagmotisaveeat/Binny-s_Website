@@ -1,0 +1,114 @@
+.footer-main-div {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-gap {
+    display: flex;
+    flex-direction: column; /* Change flex direction to row */
+    /* justify-content: space-evenly; */
+    gap: 1rem;
+}
+
+.footer-gap div ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-gap div {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    padding: 0;
+   
+}
+
+.footer-gap div ol li {
+    font-family: 'Karla', sans-serif !important;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(187, 182, 182);
+}
+
+.footer-gap .second-div {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+}
+
+.footer .icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: rgb(187, 182, 182);
+
+}
+
+.footer-last-row {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.design {
+    color: #fff; 
+    display: flex;
+    align-items: flex-end; 
+    justify-content: flex-start;
+}
+
+.copyRight {
+    color: #fff; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+@media (max-width: 576px) { 
+    .footer-last-row {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .design { 
+        padding: 0;
+        margin: 0; 
+        color: #fff; 
+        display: flex;
+        align-items: flex-end; 
+        justify-content: flex-start; 
+        font-size: 9px;
+    }
+    
+    .copyRight { 
+        padding: 0;
+        margin: 0;
+        color: #fff; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-size: 8.5px;
+    }
+}
+
+
+
+
+
+
+

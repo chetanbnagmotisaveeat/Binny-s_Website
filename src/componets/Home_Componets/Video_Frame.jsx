@@ -18,14 +18,14 @@ const Video_Frame = () => {
           <video autoPlay loop muted playsInline className='w-100' style={{ objectFit: 'cover', height: '100vh' }}>
             <source src='/videos/Video_Home.mp4' type='video/mp4' />
           </video>
-          <div className="overlay-text position-absolute bottom-0 start-0 text-start p-3 p-md-5" style={{ width: '100%'}}>
-            <Card className="bg-transparent border-0">
-              <Card.Header className="border-0">
-                <p className="text-white video-content">Crafting Perfection, Inspiring Brilliance</p>
+          <div className="overlay-text position-absolute bottom-0 start-0 text-start p-3 p-md-5 video-content-width">
+            <Card className="p-0 m-0 bg-transparent border-0 video-content-width">
+              <Card.Header className="p-0 m-0  border-0">
+                <p className="m-0 text-white video-content">Crafting Perfection, Inspiring Brilliance</p>
               </Card.Header>
-              <Card.Body >
+              <Card.Body  className='p-0 m-0' >
                 <div className='video-content-sub'>
-                  <p className="text-white">Elegance that adorns your everyday moments, in every way you wear it.</p>
+                  <p className="m-0 text-white">Elegance that adorns your everyday moments, in every way you wear it.</p>
                 </div>
               </Card.Body>
             </Card>

@@ -23,7 +23,7 @@ function App() {
   return (
 
     <>
-      <div style={{ backgroundColor: '#101010' }}>
+      <div style={{ backgroundColor: '#101010' ,display: 'flex', flexDirection: 'column' }}>
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -45,6 +45,7 @@ function App() {
           </Route>
           <Route exact path='our-Team' element={<OurTeam />} />
         </Routes>
+        <hr style={{ borderTop: '3px solid #fff', width: '98%', alignSelf: 'center', marginBottom: '10px' }} />
         <Footer />
 
       </div>

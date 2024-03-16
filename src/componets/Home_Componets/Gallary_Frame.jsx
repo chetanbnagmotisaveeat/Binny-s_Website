@@ -36,11 +36,11 @@ const Gallary_Frame = () => {
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
     >
-      <Container fluid className='position-relative overflow-hidden w-100 border border-1 border-primary' >
+      <Container fluid className='position-relative overflow-hidden w-100' >
         <div className='home-main-div-margin-bottom-and-top'>
 
       <Row className="p-0 m-0 ">
-            <Col className="home-heading home-main-div-margin-bottom-and-top  border border-1 border-parimary">
+            <Col className="home-heading home-main-div-margin-bottom-and-top">
               Gallery
             </Col>
       </Row>
@@ -65,7 +65,7 @@ const Gallary_Frame = () => {
               // pagination={true}
               loop={true}
               modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
-              className="mySwiper border border-1 border-warning mt-2 mb-2"
+              className="mySwiper mt-2 mb-2"
               style={{ width: '100%', height: 'auto' }}
             >
               <div style={{ display: 'flex', justifyContent: 'center' }}>

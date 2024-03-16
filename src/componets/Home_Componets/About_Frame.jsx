@@ -3,10 +3,19 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
-import { motion } from "framer-motion";
+import { motion ,useAnimation } from "framer-motion";
 import "../../styles/Home.css";
+import { useMediaQuery } from "react-responsive";
 
 const About_Frame = () => {
+  const isSmallScreen = useMediaQuery({ maxWidth: 764 });
+  const controls = useAnimation();
+
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 100 },
+  };
+
   return (
     <ThemeProvider
       breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
@@ -14,11 +23,11 @@ const About_Frame = () => {
     >
       <Container
         fluid
-        className="p-0 m-0 w-100 border border-1 border-primary overflow-hidden"
+        className="p-0 m-0 w-100 overflow-hidden"
       >
         <div className="p-3 home-about-main-div-margin-top" >
           <Row className="p-0 m-0">
-            <Col className="home-heading border border-1 border-parimary">
+            <Col className="home-heading ">
               About Us
             </Col>
           </Row>
@@ -28,9 +37,12 @@ const About_Frame = () => {
               sm={12}
               md={7}
               lg={7.5}
-              className="order-2 order-md-1 home-about-col-pading border border-1 border-primary"
+              className="order-2 order-md-1 home-about-col-pading "
             >
-              <div className="text-left d-flex flex-column justify-content-center align-items-center home-subContent h-100">
+              <motion.div 
+                 className="d-flex flex-column justify-content-center align-items-center home-subContent h-100" 
+                 style={isSmallScreen ? { textAlign: 'justify' } : { textAlign: 'justify' }}
+                 >
                 <p>
                   Welcome to Binny's, a legacy of elegance that has adorned
                   generations since 1962. With a rich heritage spanning 60
@@ -54,19 +66,19 @@ const About_Frame = () => {
                   perfect blend of aesthetics and durability. Binny's, where
                   legacy meets luxury in a celebration of timeless beauty.
                 </p>
-              </div>
+              </motion.div>
             </Col>
             <Col
               xs={12}
               sm={12}
               md={5}
               lg={4.5}
-              className="home-about-col-pading order-1 order-md-2 d-flex justify-content-center align-items-center border border-1 border-primary"
+              className="home-about-col-pading order-1 order-md-2 d-flex justify-content-center align-items-center"
             >
               <motion.div
                 style={{
                   padding: "30px",
-                  position: "relative", // Ensure relative positioning
+                  position: "relative", 
                 }}
               >
                 <motion.img
@@ -90,14 +102,14 @@ const About_Frame = () => {
                   className="rounded-circle"
                   src="/images/ring.png"
                   style={{
-                    position: "absolute", // Position the image absolutely
-                    top: "50%", // Center vertically
-                    left: "50%", // Center horizontally
-                    transform: "translate(-50%, -50%)", // Adjust to center precisely
-                    maxWidth: "50%", // Set maximum width
-                    maxHeight: "50%", // Set maximum height
-                    width: "auto", // Allow width to adjust based on aspect ratio
-                    height: "auto", // Allow height to adjust based on aspect ratio
+                    position: "absolute", 
+                    top: "50%", 
+                    left: "50%", 
+                    transform: "translate(-50%, -50%)", 
+                    maxWidth: "50%",
+                    maxHeight: "50%", 
+                    width: "auto", 
+                    height: "auto", 
                   }}
                 />
               </motion.div>

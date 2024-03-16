@@ -46,11 +46,11 @@ const ContactUs_Frame = () => {
     >
       <Container
         fluid
-        className="p-0 m-0 w-100 border border-1 border-primary overflow-hidden"
+        className="p-0 m-0 w-100 overflow-hidden"
       >
         <div className="p-3 home-main-div-margin-bottom-and-top">
           <Row className="p-0 m-0">
-            <Col className="home-heading border border-1 border-parimary">
+            <Col className="home-heading">
               Contact Us
             </Col>
           </Row>
@@ -59,7 +59,7 @@ const ContactUs_Frame = () => {
 
           <form onSubmit={handleSubmit(onSubmit)}  >
             <Row className="p-0 m-0 d-flex flex-column justify-content-center align-items-center mt-5" >
-              <Col xs={12} sm={12} md={8} lg={6} className="border border-1 border-primary">
+              <Col xs={12} sm={12} md={8} lg={6} className="">
                 <input
                   id="name"
                   name="name"
@@ -76,7 +76,7 @@ const ContactUs_Frame = () => {
                   {errors.name && <span style={{ color: 'red' ,paddingLeft:"5px",margin:'0px' }}>{errors.name.message}</span>}
 
               </Col>
-              <Col xs={12} sm={12} md={8} lg={6} className="border border-1 border-primary">
+              <Col xs={12} sm={12} md={8} lg={6} className="">
                 <input
                   id="phoneNumber"
                   name="phoneNumber"
@@ -96,7 +96,7 @@ const ContactUs_Frame = () => {
                 />
                 {errors.phoneNumber && <p style={{ color: 'red' ,paddingLeft:"5px",margin:'0px'}}>{errors.phoneNumber.message}</p>}
               </Col>
-              <Col xs={12} sm={12} md={8} lg={6} className="border border-1 border-primary">
+              <Col xs={12} sm={12} md={8} lg={6} className="">
                 <input
                   id="email"
                   name="email"
@@ -116,7 +116,7 @@ const ContactUs_Frame = () => {
                 />
                 {errors.email && <span style={{ color: 'red' ,paddingLeft:"5px",margin:'0px' }}>{errors.email.message}</span>}
               </Col>
-              <Col xs={12} sm={12} md={8} lg={6} className="border border-1 border-primary">
+              <Col xs={12} sm={12} md={8} lg={6} className="">
                 <textarea
                   id="message"
                   name="message"
