@@ -3,19 +3,13 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
-import { motion ,useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import "../../styles/Home.css";
 import { useMediaQuery } from "react-responsive";
 
 const About_Frame = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: 764 });
-  const controls = useAnimation();
-
-  const variants = {
-    visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: 100 },
-  };
-
+ 
   return (
     <ThemeProvider
       breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
@@ -39,9 +33,18 @@ const About_Frame = () => {
               lg={7.5}
               className="order-2 order-md-1 home-about-col-pading "
             >
-              <motion.div 
+              <motion.div
+                  
                  className="d-flex flex-column justify-content-center align-items-center home-subContent h-100" 
                  style={isSmallScreen ? { textAlign: 'justify' } : { textAlign: 'justify' }}
+                 initial={{
+                  opacity: 0,
+                  scale: 0,
+                  x: 100,
+                 }}
+                 whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                  // whileHover={{ scale: 1.005 }}
+                transition={{ duration: 1 }}
                  >
                 <p>
                   Welcome to Binny's, a legacy of elegance that has adorned
@@ -80,6 +83,14 @@ const About_Frame = () => {
                   padding: "30px",
                   position: "relative", 
                 }}
+                initial={{
+                  opacity: 0,
+                  scale: 0,
+                  x: 100,
+                 }}
+                 whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                  // whileHover={{ scale: 1.005 }}
+                transition={{ duration: 1 }}
               >
                 <motion.img
                   src="/images/rotation.png"

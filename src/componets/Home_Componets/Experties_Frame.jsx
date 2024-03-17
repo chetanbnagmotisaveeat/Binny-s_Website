@@ -57,7 +57,19 @@ const Experties_Frame = () => {
               lg={6}
               className="order-2 order-md-1 home-about-col-pading "
             >
-              <div className="d-flex flex-column justify-content-center align-items-center home-subContent home-main-div-margin-bottom-and-top" style={isSmallScreen ? { textAlign: 'justify' } : { textAlign: 'justify' }}>
+              <motion.div 
+               className="d-flex flex-column justify-content-center align-items-center home-subContent home-main-div-margin-bottom-and-top" 
+               style={isSmallScreen ? { textAlign: 'justify' } : { textAlign: 'justify' }}
+               initial={{
+                opacity: 0,
+                scale: 0,
+                x: 50,
+               }}
+               whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                // whileHover={{ scale: 1.005 }}
+              transition={{ duration: 1 }}
+               
+               >
                 <p>
                   Explore Binny's exquisite collections, where timeless elegance
                   meets contemporary craftsmanship. Discover a curated selection
@@ -79,15 +91,27 @@ const Experties_Frame = () => {
                   Binny's jewelry and find the perfect expression of your
                   individuality and taste.
                 </p>
-              </div>
+              </motion.div>
             </Col>
             <Col
               xs={12}
               sm={12}
               md={6}
               lg={6}
-              className="home-about-col-pading order-1 order-md-2 d-flex justify-content-center align-items-center"
+              className="home-about-col-pading order-1 order-md-2  d-flex justify-content-center align-items-center" 
             >
+              <motion.div
+              className="overflow-hidden"
+              initial={{
+                opacity: 0,
+                scale: 0,
+                x: 50,
+               }}
+               whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                // whileHover={{ scale: 1.005 }}
+              transition={{ duration: 1 }}
+              
+              >
               <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -134,6 +158,54 @@ const Experties_Frame = () => {
                 </div>
 
               </Swiper>
+
+              </motion.div>
+              {/* <Swiper
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+                coverflowEffect={{
+                  rotate: 0,
+                  stretch: 1,
+                  depth: 125,
+                  modifier: 2,
+                  slideShadows: true,
+                }}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                // pagination={{
+                //   clickable: true,
+                // }}
+                // navigation={true}
+                modules={[Autoplay, EffectCoverflow, Pagination]}
+                className="mySwiper"
+              >
+                <div>
+                  {
+                    imagesArrya.map((image, index) => {
+                      return (
+                        <>
+                          <SwiperSlide key={image.id + index}>
+                            <img src={image.url}  
+                             style={{
+                              borderRadius: '25px',
+                              height:'350px'
+                            }}
+                            
+                            />
+                          </SwiperSlide>
+                        </>
+                      )
+                    })
+                  }
+
+                </div>
+
+              </Swiper> */}
 
 
             </Col>

@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import '../../styles/Card_Frame.css'
 import { Button } from 'react-bootstrap';
+import {motion} from 'framer-motion';
 
 
 const Card_Frame = () => {
@@ -15,7 +16,17 @@ const Card_Frame = () => {
       minBreakpoint="xxs"
     >
       <Container fluid className='p-0 m-0 position-relative  w-100 overflow-hidden'>
-        <div className='home-main-div-margin-bottom-and-top'>
+        < motion.div 
+          className='home-main-div-margin-bottom-and-top'
+          initial={{
+            opacity: 0,
+            scale: 0,
+            x: 50,
+           }}
+           whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            // whileHover={{ scale: 1.005 }}
+          transition={{ duration: 1 }}
+          >
           <Row className='d-flex flex-column align-items-center background-image'>
             <Col className="text-center mt-3 carft-heading position-relative" >
               Crafting excellence since 1962
@@ -29,7 +40,7 @@ const Card_Frame = () => {
 
           </Row>
 
-        </div>
+        </motion.div>
 
       </Container>
 

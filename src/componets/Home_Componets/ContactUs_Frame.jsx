@@ -7,6 +7,7 @@ import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { modes } from "react-transition-group/SwitchTransition";
 import CustomInputTag from "../../Helpers/CustomInputTag";
+import {motion} from 'framer-motion';
 
 const ContactUs_Frame = () => {
 
@@ -54,10 +55,17 @@ const ContactUs_Frame = () => {
               Contact Us
             </Col>
           </Row>
+          <motion.form onSubmit={handleSubmit(onSubmit)}  
+           initial={{
+            opacity: 0,
+            scale: 0,
+            x: 50,
+           }}
+           whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            // whileHover={{ scale: 1.005 }}
+          transition={{ duration: 1 }}
           
-            
-
-          <form onSubmit={handleSubmit(onSubmit)}  >
+          >
             <Row className="p-0 m-0 d-flex flex-column justify-content-center align-items-center mt-5" >
               <Col xs={12} sm={12} md={8} lg={6} className="">
                 <input
@@ -141,7 +149,7 @@ const ContactUs_Frame = () => {
                 </Button>
               </Col>
             </Row>
-          </form>
+          </motion.form>
         </div>
            
       </Container>
