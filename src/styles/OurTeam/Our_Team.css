@@ -1,13 +1,41 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .our-team-heading {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 48px;
     font-weight: 500;
-    line-height: 43px;
-    letter-spacing: 0em;
-    text-align: left;
+    line-height: 72px;
     color: #FFFFFF;
 }
+
+.person {
+    padding: 10px;
+}
+
+.person img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    margin: 15px;
+}
+.person .name{
+    font-family: 'Poppins';
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.person .post{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 37.5px;
+    color: #FFFFFF;
+}
+
 
 .our-team-subContent{
         font-family: Karla;
@@ -31,10 +59,8 @@
         font-size: 15px;
     }
     .our-team-heading{
-        font-size: 28px;
-        line-height: 25.2px;
-        
-       
+        font-size: 25px;
+        line-height: 37.5px;   
     }
     .our-team-col-pading{
         padding-top: 1.3rem;
@@ -48,7 +74,35 @@
         margin-top:20px;
         margin-bottom: 20px;
     }
+   
+    .person{
+        padding: 0;
+        margin: 0;
+        gap:5px
+    }
+    .person .name{
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 22.5px;
+    }
     
+    .person .post{
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 18px;
+    }
+    .person img{
+        height: 200px;
+        margin-left: 0px;
+        margin-right: 0px;
+        /* padding: 5px; */
+    }
+    .outer-person{
+     width: 45%;
+     padding: 0;
+     margin: 0;
+    
+    }
 }
 
 @media (min-width: 577px) and (max-width: 768px) { /* Medium devices (tablets) */
@@ -56,8 +110,8 @@
         font-size: 18px;
     }
     .our-team-heading{
-        font-size: 32px; 
-        line-height: 28.8px; 
+        font-size: 36px; 
+        line-height: 54px; 
        
     }
     .our-team-col-pading{
@@ -72,15 +126,31 @@
         margin-top:22.5px;
         margin-bottom: 22.5px;
     }
+    .person .name{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 42px;
+    }
+    
+    .person .post{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    .person img{
+        margin-left: 0px;
+        margin-right: 0px;
+        /* padding: 5px; */
+    }
 }
 
-@media (min-width: 769px) and (max-width: 850px) { /* Medium devices (tablets) */
+@media (min-width: 769px) and (max-width: 849px) { /* Medium devices (tablets) */
     .our-team-subContent {
         font-size: 18px;
     }
     .our-team-heading{
-        font-size: 32px; 
-        line-height: 28.8px;
+        font-size: 38px; 
+        line-height: 57px;
        
          
     }
@@ -88,13 +158,29 @@
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
     }
-    .our-team-about-main-div-margin-top{
-        margin-top: 65px;
-        margin-bottom: 32.5px;
+    .our-team-main-div-margin-top{
+        margin-top: 54px;
+        margin-bottom: 38px;
     }
     .our-team-main-div-margin-bottom-and-top{
         margin-top:32.5px;
         margin-bottom: 32.5px;
+    }
+    .person .name{
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 42px;
+    }
+    
+    .person .post{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    .person img{
+        margin-left: 0px;
+        margin-right: 0px;
+        /* padding: 5px; */
     }
 }
 
@@ -104,7 +190,7 @@
     }
     .our-team-heading{
         font-size: 48px;
-        line-height: 43.2px;
+        line-height: 72px;
         
     }
     .our-team-col-pading{
@@ -112,11 +198,27 @@
         padding-bottom: 0rem;
     }
     .our-team-main-div-margin-top{
-        margin-top: 76px;
+        margin-top: 45px;
         margin-bottom: 38px;
     }
     .our-team-main-div-margin-bottom-and-top{
         margin-top:38px;
         margin-bottom: 38px;
+    }
+    .person .name{
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 60px;
+    }
+    
+    .person .post{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 37.5px;
+    }
+    .person img{
+        margin-left: 0px;
+        margin-right: 0px;
+        /* padding: 5px; */
     }
 }
