@@ -17,6 +17,7 @@ import Man_Chains from './componets/Men_Jewellery/Chains';
 import Man_Cuff_Links from './componets/Men_Jewellery/Cuff_Links';
 import Man_Brooches from './componets/Men_Jewellery/Brooches';
 import OurTeam from './componets/OurTeam/OurTeam';
+import Book_Appointment from './componets/Book _Appointmen/Book_Appointment';
 
 
 function App() {
@@ -44,6 +45,8 @@ function App() {
             <Route exact path="brooches" element={<Man_Brooches />} />
           </Route>
           <Route exact path='our-Team' element={<OurTeam />} />
+          <Route exact path='book-an-appointment' element={<Book_Appointment />} />
+
         </Routes>
         <hr style={{ borderTop: '3px solid #fff', width: '98%', alignSelf: 'center', marginBottom: '10px' }} />
         <Footer />
