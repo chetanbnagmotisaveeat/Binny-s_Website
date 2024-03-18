@@ -8,8 +8,11 @@ import { useForm } from "react-hook-form";
 import { modes } from "react-transition-group/SwitchTransition";
 import CustomInputTag from "../../Helpers/CustomInputTag";
 import {motion} from 'framer-motion';
+import { useMediaQuery } from "react-responsive";
 
 const ContactUs_Frame = () => {
+
+  const isSmallScreen = useMediaQuery({ maxWidth: 764 });
 
    const form=useForm({
     defaultValues: {
@@ -56,14 +59,14 @@ const ContactUs_Frame = () => {
             </Col>
           </Row>
           <motion.form onSubmit={handleSubmit(onSubmit)}  
-           initial={{
-            opacity: 0,
-            scale: 0,
-            x: 50,
-           }}
-           whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            // whileHover={{ scale: 1.005 }}
-          transition={{ duration: 1 }}
+          //  initial={{
+          //   opacity: 0,
+          //   scale: 0,
+          //   x: 50,
+          //  }}
+          //  whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          //   // whileHover={{ scale: 1.005 }}
+          //  transition={{ duration: 1 }}
           
           >
             <Row className="p-0 m-0 d-flex flex-column justify-content-center align-items-center mt-5" >
@@ -130,7 +133,7 @@ const ContactUs_Frame = () => {
                   name="message"
                   placeholder="Message"
                   className={`w-100 mt-4 form-control-text-area ${errors.message && errors.message.message ? 'mb-2' : 'mb-4'}`}
-                  rows={7}
+                  rows={9}
                   {...register('message', { required: {
                     value:true,
                     message:'Please enter a Message'
@@ -142,7 +145,7 @@ const ContactUs_Frame = () => {
                 <Button
                   type="submit"
                   variant="outline-light"
-                  className="w-50 mt-4 mb-4 pt-3 pb-3"
+                  className={`${isSmallScreen ? 'w-50':'w-25'} mt-3 mb-3 pt-3 pb-3`}
                   style={{ borderRadius: "50px" }}
                 >
                   Submit
@@ -160,7 +163,7 @@ const ContactUs_Frame = () => {
 export default ContactUs_Frame;
 
 let formControl = {
-  height: "40px",
+  height: "47px",
   borderRadius: "10px",
   backgroundColor: "transparent",
   border: "1px solid white",

@@ -26,7 +26,7 @@ function App() {
     <>
       <div style={{ backgroundColor: '#101010' ,display: 'flex', flexDirection: 'column' }}>
         <Header />
-        <Routes>
+        <Routes scrollToTop>
           <Route exact path="/" element={<Home />} />
           <Route path="/women">
             <Route exact path="nacklace" element={<Nacklace />} />

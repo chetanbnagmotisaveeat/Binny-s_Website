@@ -80,9 +80,9 @@ const Header = () => {
                 {[false].map((expand) => (
                     <Navbar key={expand} expand={expand} className="bg-DARK">
                         <Container fluid>
-                            <div className='d-flex justify-content-between align-items-center'>
+                            <div className='d-flex justify-content-between align-items-center' style={{height:'40px'}}>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggleClick} />
-                                <div href="#home"><img src="/images/logo.png" alt="Logo" /></div>
+                                <div href="#home" className="logo-container" ><img className='img-fluid' src="/images/logo.png" alt="Logo"/></div>
                                 <div href="#link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" fill="white" className="bi bi-geo-alt" viewBox="0 0 16 16">
                                         <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />

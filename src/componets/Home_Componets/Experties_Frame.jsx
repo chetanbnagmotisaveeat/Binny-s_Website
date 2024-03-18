@@ -129,11 +129,14 @@ const Experties_Frame = () => {
                   disableOnInteraction: false,
                 }}
                 loop={true}
-                // pagination={{
-                //   clickable: true,
-                // }}
+                pagination={{
+                  clickable: true,
+                  renderBullet: function (index, className) {
+                    return '<span class="' + className + '" "></span>';
+                  },
+                }}
                 // navigation={true}
-                modules={[Autoplay, EffectCoverflow, Pagination]}
+                modules={[Autoplay, EffectCoverflow, Pagination,Navigation]}
                 className="mySwiper"
               >
                 <div>

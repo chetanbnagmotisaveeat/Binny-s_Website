@@ -1,33 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 .book-heading {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 48px;
     font-weight: 500;
     line-height: 43px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.book-subContent{
-        font-family: Karla;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 30px;
-        letter-spacing: 0em;
-        text-align: left; 
-        color: #FFFFFF;  
-    
+.form-control-text-area {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding-left: 10px; 
+    color: #FFFFFF; 
 }
 
 @media (max-width: 576px) { /* Small devices (phones) */
-    .book-subContent {
-        font-size: 15px;
-    }
     .book-heading{
-        font-size: 28px;
-        line-height: 25.2px;
-        
-       
+        font-size: 23px;
+        line-height: 32px;  
     }
     .book-col-pading{
         padding-top: 1.3rem;
@@ -38,19 +34,16 @@
         margin-bottom: 0px;
     }
     .book-main-div-margin-bottom-and-top{
-        margin-top:20px;
-        margin-bottom: 20px;
+        margin-top:100px;
+        margin-bottom: 25px;
     }
     
 }
 
 @media (min-width: 577px) and (max-width: 768px) { /* Medium devices (tablets) */
-    .book-subContent {
-        font-size: 18px;
-    }
     .book-heading{
-        font-size: 32px; 
-        line-height: 28.8px; 
+        font-size: 28px; 
+        line-height: 36px; 
        
     }
     .book-col-pading{
@@ -62,18 +55,15 @@
         margin-bottom: 22.5px;
     }
     .book-main-div-margin-bottom-and-top{
-        margin-top:22.5px;
-        margin-bottom: 22.5px;
+        margin-top:100px;
+        margin-bottom: 25px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 850px) { /* Medium devices (tablets) */
-    .book-subContent {
-        font-size: 18px;
-    }
     .book-heading{
-        font-size: 32px; 
-        line-height: 28.8px;
+        font-size: 30px; 
+        line-height: 40px;
        
          
     }
@@ -86,18 +76,15 @@
         margin-bottom: 32.5px;
     }
     .book-main-div-margin-bottom-and-top{
-        margin-top:32.5px;
-        margin-bottom: 32.5px;
+        margin-top:100px;
+        margin-bottom: 25px;
     }
 }
 
 @media (min-width: 850px) { /* Large devices (laptops/desktops) */
-    .book-subContent {
-        font-size: 20px;
-    }
     .book-heading{
-        font-size: 48px;
-        line-height: 43.2px;
+        font-size: 36px;
+        line-height: 48px;
         
     }
     .book-col-pading{
@@ -109,25 +96,10 @@
         margin-bottom: 38px;
     }
     .book-main-div-margin-bottom-and-top{
-        margin-top:38px;
-        margin-bottom: 38px;
+        margin-top:100px;
+        margin-bottom: 25px;
     }
 }
 
 
-.form-control {
-    height: 40px;
-    border-radius: 10px;
-    background-color: transparent !important;
-    border: 1px solid white;
-    padding-left: 10px;
-    color: #FFFFFF;
-}
 
-.form-control-text-area {
-    border-radius: 10px;
-    background-color: transparent;
-    border: 1px solid white;
-    padding-left: 10px; 
-    color: #FFFFFF; 
-}

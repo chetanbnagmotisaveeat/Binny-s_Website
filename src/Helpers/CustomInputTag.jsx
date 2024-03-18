@@ -22,6 +22,7 @@ const CustomInputTag = ({
             id={id}
             name={id}
             placeholder={placeholder}
+            autoComplete="off"
             className={`w-100 mt-4 ${
               errors[id] && errors[id].message ? "mb-2" : "mb-4"
             }`}
@@ -29,11 +30,11 @@ const CustomInputTag = ({
             {...register(id, {
               required: {
                 value: true,
-                message: `${id} is required`,
+                message: `${placeholder} is required`,
               },
               pattern: {
                 value: pattern ? pattern : false,
-                message: `Please enter a valid ${id}`,
+                message: `Please enter a valid ${placeholder}`,
               },
             })}
           />
@@ -51,11 +52,12 @@ const CustomInputTag = ({
                   id={id}
                   name={id}
                   placeholder={placeholder}
+                  autoComplete="off"
                   className={`w-100 mt-4 form-control-text-area ${errors[id] && errors[id].message ? "mb-2" : "mb-4"}`}
                   rows={7}
-                  {...register('message', { required: {
+                  {...register(id, { required: {
                     value:true,
-                    message:`${id} is required`,
+                    message:`${placeholder} is required`,
                   } })}
                 />
                 {errors[id] && (
