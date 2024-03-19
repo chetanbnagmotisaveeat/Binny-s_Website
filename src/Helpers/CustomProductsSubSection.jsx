@@ -35,21 +35,21 @@ const CustomProductsSubSection = ({ data }) => {
         >
             <Container
                 fluid
-                className="p-0 m-0 w-100 border border-1 border-primary overflow-hidden"
+                className="p-0 m-0 w-100 overflow-hidden"
             >
                 <div className="p-3 necklace-main-div-margin-top text-light">
                     <Row className="p-0 m-0">
-                        <Col lg={12} className="necklace-heading border border-1 border-parimary">
+                        <Col lg={12} className="necklace-heading mb-3">
                             {heading}
                         </Col>
-                        <Col lg={12} className="necklace-heading border border-1 border-primary" style={{ height: '70vh', position: 'relative' }}>
+                        <Col lg={12} className="necklace-heading" style={{ height: '70vh', position: 'relative' }}>
                             <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', padding: '10px' }}>
                                 <video autoPlay loop muted playsInline className='w-100 h-100' style={{ objectFit: 'cover', borderRadius: "10px" }}>
                                     <source src={videoPath} type='video/mp4' />
                                 </video>
                             </div>
                         </Col>
-                        <Col lg={12} className="border border-1 border-parimary">
+                        <Col lg={12} className="">
                             <div className="necklace-sub-contain">
                                 {content}
                             </div>
@@ -63,7 +63,7 @@ const CustomProductsSubSection = ({ data }) => {
                             md={8}
                             sm={12}
                             xs={12}
-                            className="border border-1 border-parimary "
+                            className=""
 
                         >
                             <div className="container">
@@ -89,11 +89,13 @@ const CustomProductsSubSection = ({ data }) => {
                                                             className="image-container"
                                                             initial={{
                                                                 opacity: index === 0 ? 1 : 0,
+                                                                scale: index === 0 ? 1.2 : 1,
                                                                 x: 1000 / 2,
                                                                 y: -1000 / 2,
                                                             }}
                                                             animate={{
                                                                 opacity: index === currentIndex ? 1 : 0,
+                                                                // scale: index === currentIndex ? 1.2 : 1,
                                                                 x: index === currentIndex ? 0 : Math.cos((index / (imagesArray.length - 1)) * Math.PI) * 1000 / 2,
                                                                 y: index === currentIndex ? 0 : Math.sin((index / (imagesArray.length - 1)) * Math.PI) * 1000 / 2,
                                                             }}
@@ -183,7 +185,7 @@ const CustomProductsSubSection = ({ data }) => {
                                         md={4}
                                         sm={12}
                                         xs={12}
-                                        className="border border-1 border-primary position-relative order-2 order-md-2 img-col"
+                                        className="position-relative order-2 order-md-2 img-col"
                                     >
                                         <motion.div className="half-circle h-100 w-100 position-relative d-flex justify-content-center align-items-center overflow-hidden">
                                             {imagesArray.map((image, index) => (
@@ -192,15 +194,19 @@ const CustomProductsSubSection = ({ data }) => {
                                                     className="image-container"
                                                     initial={{
                                                         opacity: index === 0 ? 1 : 0,
-                                                        x: 1000 / 2,
-                                                        y: -1000 / 2,
+                                                        scale: index === 0 ? 1.2 : 1,
+                                                        // x: 1000 / 2,
+                                                        // y: -1000 / 2,
+                                                        // x:index === currentIndex ? 0: Math.cos((index / (imagesArray.length - 1)) * Math.PI) * 1000 / 2,
+                                                        // y:index === currentIndex ? 0 :  Math.sin((index / (imagesArray.length - 1)) * Math.PI) * 1000 / 2
                                                     }}
                                                     animate={{
                                                         opacity: index === currentIndex ? 1 : 0,
-                                                        x: index === currentIndex ? 0 : Math.cos((index / (imagesArray.length - 1)) * Math.PI) * 1000 / 2,
-                                                        y: index === currentIndex ? 0 : Math.sin((index / (imagesArray.length - 1)) * Math.PI) * 1000 / 2,
+                                                        scale: index === currentIndex ? 1.2 : 1,
+                                                        // x: index === currentIndex ? 0 : Math.cos((index / (imagesArray.length - 1)) * Math.PI) * 1000 / 2,
+                                                        // y: index === currentIndex ? 0 : Math.sin((index / (imagesArray.length - 1)) * Math.PI) * 1000 / 2,
                                                     }}
-                                                    transition={{ type: "spring", damping: 20, repeatType: "loop" }}
+                                                    transition={{ type: "spring", damping: 20, repeatType: "loop"}}
                                                     style={{ position: "absolute" }}
                                                 >
                                                     <img
