@@ -15,7 +15,7 @@ const Footer = () => {
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
     >
-      <Container fluid className='footer-main-div'>
+      <Container fluid className='footer-main-div mt-2'>
         {
           !isSmallScreen && (
             <>
