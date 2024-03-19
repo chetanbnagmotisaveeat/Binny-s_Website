@@ -3,7 +3,8 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { motion } from 'framer-motion';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide} from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -15,6 +16,7 @@ import '../../styles/swiperStyle.css';
 import '../../styles/Gallary_Frame.css';
 
 const Gallary_Frame = () => {
+  
   const isSmallScreen = useMediaQuery({ maxWidth: 764 });
   const [isAutoplayEnabled, setIsAutoplayEnabled] = useState(true);
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -30,14 +32,14 @@ const Gallary_Frame = () => {
   };
 
   const imagesArray = [
-    { id: 1, url: '../images/Curoals/Image-1.png', name: 'Image-1' },
-    { id: 2, url: '../images/Curoals/Image-2.png', name: 'Image-2' },
-    { id: 3, url: '../images/Curoals/Image-3.png', name: 'Image-3' },
-    { id: 4, url: '../images/Curoals/Image-4.png', name: 'Image-4' },
-    { id: 5, url: '../images/Curoals/Image-5.png', name: 'Image-5' },
-    { id: 6, url: '../images/Curoals/Image-2.png', name: 'Image-6' },
-    { id: 7, url: '../images/Curoals/Image-3.png', name: 'Image-7' },
-    { id: 8, url: '../images/Curoals/Image-4.png', name: 'Image-8' },
+    { id: 1, url: '../images/Curoals/Image-1.png', name: 'Brooches' },
+    { id: 2, url: '../images/Curoals/Image-2.png', name: 'Rings' },
+    { id: 3, url: '../images/Curoals/Image-3.png', name: 'Nacklace' },
+    { id: 4, url: '../images/Curoals/Image-4.png', name: 'Brooches' },
+    { id: 5, url: '../images/Curoals/Image-5.png', name: 'Bracelets' },
+    { id: 6, url: '../images/Curoals/Image-2.png', name: 'Rings' },
+    { id: 7, url: '../images/Curoals/Image-3.png', name: 'Nacklace' },
+    { id: 8, url: '../images/Curoals/Image-4.png', name: 'Brooches' },
   ];
 
   return (
@@ -56,12 +58,12 @@ const Gallary_Frame = () => {
               coverflowEffect={{
                 rotate: 0,
                 stretch: -28,
-                depth: 47,
+                depth: 48,
                 modifier: 5,
                 slideShadows: false,
               }}
               autoplay={{
-                delay: isSmallScreen ? (isAutoplayEnabled ? 8000 : null) : (isAutoplayEnabled ? 2000 : null),
+                delay: isSmallScreen ? (isAutoplayEnabled ? 5000 : null) : (isAutoplayEnabled ? 2000 : null),
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
               }}
@@ -91,26 +93,14 @@ const Gallary_Frame = () => {
                         style={{
                           objectFit: 'cover',
                           maxWidth: '100%',
-                          height: '100%',
+                          height: '120%',
                           borderRadius: '20px',
-                          border: hoveredIndex === index ? '1px solid red' : 'none',
+                          // border: hoveredIndex === index ? '1px solid red' : 'none',
                         }}
                       />
                       {hoveredIndex === index && (
                         <div
-                          style={{
-                            textAlign: 'center',
-                            fontSize: '25px',
-                            color: 'black',
-                            fontWeight: 500,
-                            position: 'absolute',
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            backgroundColor: 'rgba(255, 255, 255, 0.7)',
-                            padding: '5px',
-                            borderRadius: '0px 0px 20px 20px',
-                          }}
+                         className='image-frame'
                         >
                           {image.name}
                         </div>

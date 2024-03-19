@@ -15,24 +15,16 @@ const Card_Frame = () => {
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
     >
-      <Container fluid className='p-0 m-0 position-relative  w-100 overflow-hidden'>
+      <Container fluid className='p-0 w-0 position-relative  w-100 overflow-hidden mb-3'>
         < motion.div 
-          className='home-main-div-margin-bottom-and-top'
-          initial={{
-            opacity: 0,
-            scale: 0,
-            x: 50,
-           }}
-           whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            // whileHover={{ scale: 1.005 }}
-          transition={{ duration: 1 }}
+          className='home-main-div-margin-bottom-and-top background-image'
           >
-          <Row className='d-flex flex-column align-items-center background-image'>
+          <Row className='d-flex flex-column align-items-center'>
             <Col className="text-center mt-3 carft-heading position-relative" >
               Crafting excellence since 1962
             </Col>
 
-            <Col className="text-center position-relative ">
+            <Col className="text-center position-relative mt-3 ">
               <Button variant="outline-light" className='m-4 carft-subContent outline-none btn-larger' style={{ borderRadius: '100px' }}>
                 Discover More
               </Button>
