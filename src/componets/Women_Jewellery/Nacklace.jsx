@@ -1,5 +1,6 @@
 import React from "react";
 import CustomProductsSubSection from "../../Helpers/CustomProductsSubSection";
+import CustomProductsSubSectionSecond from "../../Helpers/CustomProductsSubSectionSecond";
 
 
 const imagesArray = [
@@ -53,7 +54,7 @@ const Nacklace = () => {
  
   return (
     <>
-     <CustomProductsSubSection data={contain} /> 
+     <CustomProductsSubSectionSecond data={contain} /> 
     </>
   );
 };
