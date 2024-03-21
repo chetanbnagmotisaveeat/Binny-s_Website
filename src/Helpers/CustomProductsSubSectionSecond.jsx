@@ -4,10 +4,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 import { motion } from "framer-motion";
-import "../styles/Women/NacklaceSecond.css";
+import "../styles/Women/Nacklace.css";
 import "../styles/Card_Frame.css"
-import { Button } from "react-bootstrap";
+import { Button, NavLink } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 const CustomProductsSubSectionSecond = ({ data }) => {
     const { imagesArray, duration, heading, videoPath, content ,contentMobile,handleReadMoreClick,showFullContent,setShowFullContent} = data;
@@ -43,7 +44,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                         </Col>
                         <Col lg={12} className="necklace-heading" style={{ height: '70vh', position: 'relative' }}>
                             <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', padding: isSmallScreen ? '0px' :'10px' }}>
-                                <video autoPlay loop muted playsInline className='w-100 h-100' style={{ objectFit: 'cover', borderRadius: "10px" }}>
+                                <video autoPlay loop muted playsInline className='w-100 h-100' style={{ objectFit: 'cover', borderRadius: isSmallScreen? '0px': "10px" }}>
                                     <source src={videoPath} type='video/mp4' />
                                 </video>
                             </div>
@@ -53,10 +54,10 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                               {isSmallScreen ? (<>
                                  {
                                     showFullContent ? (<>{contentMobile}
-                                     <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: '#FFF' }}> Read More...</span>
+                                     <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink' }}> Read More...</span>
                                     
                                     </>):(<>{content} 
-                                        <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: '#FFF' }}>  Read Less...</span>
+                                        <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink' }}>  Read Less...</span>
                                     </>)
                                  }
                               </>):(<>
@@ -69,7 +70,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                         </Col>
 
                     </Row>
-                    <Row className="-p-0 m-0 ">
+                    <Row className="p-0 m-0">
                         <Col
                             lg={8}
                             md={8}
@@ -99,7 +100,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                     {
                                         isSmallScreen && (
                                             <>
-                                                <motion.div className="half-circle w-100 mt-5 position-relative d-flex justify-content-center align-items-center overflow-hidden">
+                                                <motion.div className="half-circle w-100 mt-4 position-relative d-flex justify-content-center align-items-center overflow-hidden">
                                                     {imagesArray.map((image, index) => (
                                                         <motion.div
                                                             key={image.id}
@@ -137,7 +138,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
 
                                     {
                                         isSmallScreen && (
-                                            <div className="p-0 m-0 col-lg-12 mt-5 mb-2  d-flex justify-content-between flex-wrap">
+                                            <div className="p-0 m-0 col-lg-12 mt-4 mb-2  d-flex justify-content-between flex-wrap">
                                                 {imagesArray.map((image, index) => (
                                                     <div key={image.id} className="d-flex flex-column ">
 
@@ -152,7 +153,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                                          className="d-flex justify-content-center mt-2">
                                                             {index === currentIndex && (
                                                                 // <hr className="decoration-line" />
-                                                                <svg width="30" height="5" viewBox="0 0 50 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <svg width="50" height="5" viewBox="0 0 50 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <rect width="50" height="5" rx="2.5" fill="#D9D9D9" />
                                                                 </svg>
 
@@ -177,7 +178,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                                 animate={{ scale: 1, opacity: 1, x: 0, y: 0 }} // Animate to scale 1 (normal size) and opacity 1 (fully visible)
                                                 exit={{ scale: 0.5, opacity: 0.5, x: 0, y: 0 }} // Exit animation back to scale 0.5 (smaller) and opacity 0 (hidden)
                                                 transition={{ duration: 1.5 }} // Transition duration
-                                                className="content-inner"
+                                                
 
 
                                             >
@@ -186,9 +187,13 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                         </div>
                                     </div>
                                     <div className="col-lg-12 button-style d-flex justify-contain-start ">
-                                        <Button variant="outline-light" className='button-subContent outline-none btn-larger' style={{ borderRadius: '100px' }}>
-                                            Discover More
-                                        </Button>
+                                       
+                                           <Link to="/book-an-appointment" className="p-0 m-0">
+                                           <Button variant="outline-light" type="button" className='button-Content outline-none btn-larger' style={{ borderRadius: '100px' }}>
+                                           Discover More
+                                           </Button>
+                                            
+                                            </Link>  
                                     </div>
                                     {
                                         !isSmallScreen && (
@@ -199,14 +204,12 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                                             <img src={image.url} alt={`Image ${image.id}`} className="rounded-circle img-fluid" />
                                                         </div>
                                                         <motion.div 
-                                                         initial={{ opacity: 0, scale: 0 }} // Initial state
+                                                         initial={{ opacity: 0, scale: 0 }}
                                                          animate={{ opacity: index === currentIndex ? 1 : 0, scale: index === currentIndex ? 1 : 0 }} // Animate to this state
-                                                         transition={{ duration: 0.5 }} // Animation duration
-                                                         style={{ marginTop: "5px" }} // Style
-                                                        
-                                                        className="d-flex justify-content-center mt-1" >
+                                                         transition={{ duration: 0.5 }} 
+                                                         className="d-flex justify-content-center mt-1 " >
                                                             {index === currentIndex && (
-                                                                <svg width="100" height="5" viewBox="0 0 50 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <svg width="50" height="5" viewBox="0 0 50 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <rect width="50" height="5" rx="2.5" fill="#D9D9D9" />
                                                                 </svg>
                                                             )}

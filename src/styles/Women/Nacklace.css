@@ -68,6 +68,7 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 72px;   
+    /* border: 1px solid rgb(0, 255, 98); */
 }
 
 
@@ -80,6 +81,7 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     min-height: 228px;
+    /* border: 1px solid red; */
 }
 
 .button-Content{
@@ -89,8 +91,11 @@
     line-height: 22px;
 }
 .button-style{
-    margin-bottom: 70px;
-    margin-top: 10px;
+    margin-top: 0rem;
+    margin-bottom:3rem;
+    /* margin-bottom: 70px; */
+    /* margin-top: 10px; */
+    /* border: 1px solid blue; */
 }
 .img-col{
     height:100vh
@@ -110,12 +115,16 @@
         margin-top: 40px;
         margin-bottom: 0px;
     }
+
+    .necklace-sub-contain{
+        margin-bottom: 3rem;
+    }
     .content-container {
         width: 100%;
         text-align: justify;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        min-height: 360px;
+        margin-top: 1.6rem;
+        margin-bottom: 0rem;
+        min-height: 343px;
     }
     .image-name {
         font-size: 24px;
@@ -128,7 +137,8 @@
     .button-style{
         display: flex;
         justify-content: center;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
     }
     .half-circle {
         position: absolute;
@@ -142,20 +152,23 @@
     }
     
     .circle-container {
-        width: 60px; 
-        height: 60px;
-        margin: 2px;
+        width: 53px; 
+        height: 53px;
+        margin: 1.4px;
     }
     .decoration-line {
         border: 2.5px solid #fff;  
     }
     .img-col{
-        height:30vh
+        height:30vh;
+        /* border: 1px solid rgb(0, 47, 255); */
     }
     
     .half-circle  .image-container img{
         max-width: 100%; 
         max-height: 180px ; 
+        
+        /* border: 1px solid rgb(0, 47, 255); */
     }
     
 }
@@ -174,7 +187,7 @@
         width: 100%;
         text-align: justify;
         margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         min-height: 150px;
         font-size: 18px;
         line-height: 27px;
@@ -190,7 +203,8 @@
     .button-style{
         display: flex;
         justify-content: center;
-        margin-bottom: 3rem;
+        margin-bottom: 0rem;
+        /* border: 1px solid gold; */
     }
     .half-circle {
         position: absolute;
@@ -203,17 +217,20 @@
         transform: translateX(0%) rotate(360deg); 
     }
     .img-col{
-        height:38vh
+        height:38vh;
+        /* border: 1px solid gold; */
     }
     
     .half-circle  .image-container img{
         max-width: 100%; 
         max-height: 180px ; 
+        /* border: 1px solid gold; */
     }
     .circle-container {
         width: 70px; 
         height: 70px;
         margin: 2px;
+        /* border: 1px solid gold; */
     }
 
     .decoration-line {
@@ -233,11 +250,12 @@
     }
     .content-container {
         width: 100%;
-        margin-top: 5rem;
-        margin-bottom: 1rem;
-        min-height: 269px;
+        margin-top: 2.5rem;
+        margin-bottom: 0rem;
+        min-height: 220px;
         font-size: 18px;
         line-height: 28px;
+        /* border: 1px solid brown; */
     } 
     .image-name {
         font-size: 40px;
@@ -247,7 +265,9 @@
         font-size: 14px;
         line-height: 17.6px;
     }
-    
+    .button-style{
+        margin-bottom: 2rem;
+    }
     .half-circle {
         position: absolute;
         top: 50%; /* Vertically center the circle */
@@ -260,7 +280,7 @@
     }
     
     .img-col{
-        height:95vh
+        height:100vh
     }
     
     .half-circle  .image-container img{
@@ -268,8 +288,8 @@
         max-height: 'auto' ; 
     }
     .circle-container {
-        width: 62px; 
-        height: 62px;
+        width: 70px; 
+        height: 70px;
         margin: 1px;
     }
     .decoration-line {
@@ -288,28 +308,35 @@
         margin-bottom: 38px;
     }
     .content-container {
-        width: 80%;
-        margin-top: 5rem;
+        width: 75%;
+        margin-top: 3rem;
         margin-bottom: 2rem;
-        min-height: 269px;
+        min-height: 220px;
         font-size: 20px;
         line-height: 28px;
+        /* border: 1px solid palegreen; */
     } 
     .image-name {
         font-size: 42px;
         line-height: 40px;
+        margin-top: 3rem;
+    }
+    .button-style{
+        margin-bottom: 2rem;
     }
     .img-col{
-        height:95vh
+        height:100vh;
+        /* border: 1px solid palegreen; */
     }
     .half-circle  .image-container img{
         max-width: 100%; 
         max-height: 'auto' ; 
     }
     .circle-container {
-        width: 70px; 
-        height: 70px;
+        width: 80px; 
+        height: 80px;
         margin: 1px;
+        /* border: 1px solid palegreen; */
     }
     .decoration-line {
         border: 2.5px solid #fff;  
@@ -319,7 +346,8 @@
 @media (min-width: 1096px) and (max-width: 1400px)  { 
    
     .img-col{
-        height:120vh
+        height:100vh;
+        /* border:1px solid red */
     }
    
 }

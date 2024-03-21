@@ -62,10 +62,14 @@
 
   
 .image-name {
+    /* width: auto;  */
+    /* height: auto; */
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 40px;
     line-height: 72px;
+    border: 1px solid red;
+    
 }
 
 
@@ -75,7 +79,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 36px;
-    margin-top: 5.5rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     min-height: 228px;
 }
@@ -87,7 +91,7 @@
     line-height: 22px;
 }
 .button-style{
-    margin-top: 3rem;
+    margin-top: 1rem;
     
     /* margin-bottom: 70px; */
     /* margin-top: 10px; */
