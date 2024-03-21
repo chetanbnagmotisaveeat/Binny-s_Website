@@ -1,0 +1,327 @@
+.necklace-heading{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.necklace-sub-contain{
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    word-wrap: break-word;
+    width: 100%;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.necklace-main-div-margin-top{
+    margin-top: 76px;
+    margin-bottom: 38px;
+}
+
+.half-circle {
+    position: absolute;
+    top: 50%; /* Vertically center the circle */
+    right:0; /* Align to the right side */
+    width: 500px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    background-color: #000000; /* Change to your desired color */
+    border-radius: 1000px 0 0 1000px; /* This creates a half-circle shape with a diameter of 1000px */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.circle-container {
+    width: 100px; /* Default width */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    overflow: hidden; /* Hides any overflow content */
+    background-color: #000000;
+    margin-bottom: 20px; /* Adjust spacing between images */
+  }
+  
+  .circle-container img {
+    width: 100%; /* Ensures the image fills the circular container */
+    height: 100%; /* Ensures the image fills the circular container */
+    object-fit: cover; /* Scales the image to cover the circular container */
+  }
+  
+  .decoration-line {
+    border: 3px solid white; 
+    margin-top: 5px; 
+    border-radius: 10px;
+    padding: 1px;
+    background-color: white ;  
+}
+
+  
+.image-name {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 72px;
+}
+
+
+.content-container {
+    width: 72%; 
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    margin-top: 5.5rem;
+    margin-bottom: 3rem;
+    min-height: 228px;
+}
+
+.button-Content{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+.button-style{
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+.img-col{
+    height:100vh
+}
+
+.half-circle  .image-container img{
+    max-width: 100%; 
+    max-height: auto ; 
+}
+  
+@media (max-width: 576px) { /* Small devices (phones) */
+    .necklace-heading{
+        font-size: 28px;
+        line-height: 25.2px;   
+    }
+    .necklace-main-div-margin-top{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .content-container {
+        width: 100%;
+        text-align: justify;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        min-height: 450px;
+    }
+    .image-name {
+        font-size: 24px;
+        line-height: 43.2px;
+    }
+    .button-Content{
+        font-size: 16px;
+        line-height: 17.6px;
+    }
+    .button-style{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .half-circle {
+        position: absolute;
+        top: 0; 
+        right: 0;
+        width: 250px; 
+        height: 250px;
+        background-color: #000000; 
+        border-radius: 0px 0px 1000px 1000px; 
+        transform: translateX(0%) rotate(360deg); 
+    }
+    
+    .circle-container {
+        width: 40px; 
+        height: 40px;
+        margin: 2px;
+    }
+    .decoration-line {
+        border: 2.5px solid #fff;  
+    }
+    .img-col{
+        height:30vh
+    }
+    
+    .half-circle  .image-container img{
+        max-width: 100%; 
+        max-height: 180px ; 
+    }
+    
+}
+
+@media (min-width: 577px) and (max-width: 768px) { /* Medium devices (tablets) */
+    .necklace-heading{
+        font-size: 32px; 
+        line-height: 28.8px; 
+       
+    }
+    .necklace-main-div-margin-top{
+        margin-top: 45px;
+        margin-bottom: 22.5px;
+    }
+    .content-container {
+        width: 100%;
+        text-align: justify;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        min-height: 150px;
+        font-size: 18px;
+        line-height: 27px;
+    } 
+    .image-name {
+        font-size: 32px;
+        line-height: 46px;
+    } 
+    .button-Content{
+        font-size: 16px;
+        line-height: 17.6px;
+    }
+    .button-style{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .half-circle {
+        position: absolute;
+        top: 0; 
+        right: 0;
+        width: 250px; 
+        height: 250px;
+        background-color: #000000; 
+        border-radius: 0px 0px 1000px 1000px; 
+        transform: translateX(0%) rotate(360deg); 
+    }
+    .img-col{
+        height:38vh
+    }
+    
+    .half-circle  .image-container img{
+        max-width: 100%; 
+        max-height: 180px ; 
+    }
+    .circle-container {
+        width: 70px; 
+        height: 70px;
+        margin: 2px;
+    }
+
+    .decoration-line {
+        border: 2.5px solid #fff;  
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 850px) { /* Medium devices (tablets) */
+    .necklace-heading{
+        font-size: 32px; 
+        line-height: 28.8px;    
+    }
+    .necklace-main-div-margin-top{
+        margin-top: 65px;
+        margin-bottom: 32.5px;
+    }
+    .content-container {
+        width: 100%;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        min-height: 269px;
+        font-size: 18px;
+        line-height: 28px;
+    } 
+    .image-name {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .button-Content{
+        font-size: 14px;
+        line-height: 17.6px;
+    }
+    
+    .half-circle {
+        position: absolute;
+        top: 50%; /* Vertically center the circle */
+        right:0; /* Align to the right side */
+        width: 500px; /* Adjust width as needed */
+        height: 500px; /* Adjust height as needed */
+        background-color: #000000; /* Change to your desired color */
+        border-radius: 1000px 0 0 1000px; /* This creates a half-circle shape with a diameter of 1000px */
+        transform: translateY(-50%); /* Center vertically */
+    }
+    
+    .img-col{
+        height:95vh
+    }
+    
+    .half-circle  .image-container img{
+        max-width: 100%; 
+        max-height: 'auto' ; 
+    }
+    .circle-container {
+        width: 62px; 
+        height: 62px;
+        margin: 1px;
+    }
+    .decoration-line {
+        border: 2.5px solid #fff;  
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1095px)  { 
+    .necklace-heading{
+        font-size: 48px;
+        line-height: 43.2px;
+        
+    }
+    .necklace-main-div-margin-top{
+        margin-top: 76px;
+        margin-bottom: 38px;
+    }
+    .content-container {
+        width: 80%;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        min-height: 269px;
+        font-size: 20px;
+        line-height: 28px;
+    } 
+    .image-name {
+        font-size: 42px;
+        line-height: 40px;
+    }
+    .img-col{
+        height:95vh
+    }
+    .half-circle  .image-container img{
+        max-width: 100%; 
+        max-height: 'auto' ; 
+    }
+    .circle-container {
+        width: 70px; 
+        height: 70px;
+        margin: 1px;
+    }
+    .decoration-line {
+        border: 2.5px solid #fff;  
+    }
+}
+ 
+@media (min-width: 1096px) and (max-width: 1400px)  { 
+   
+    .img-col{
+        height:120vh
+    }
+   
+}
+
+
+ 
+  

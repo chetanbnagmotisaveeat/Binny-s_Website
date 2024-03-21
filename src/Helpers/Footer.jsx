@@ -52,8 +52,9 @@ const Footer = () => {
                         <div className='heading'>Legal Terms</div>
                         <div className='second-div'>
                           <ol>
-                            <li>Terms of Use</li>
-                            <li>Privacy Policy</li>
+                          
+                            <li><a href='https://workdrive.zohopublic.in/external/writer/b1374ad73a5f31af0a69e85c63ec1ee1bbdd88359a6b8e14f7a9333ecb7519bc' target="_blank" >Terms of Use</a></li>
+                            <li><a href='https://workdrive.zohopublic.in/external/writer/409873d86098403b12f39a6cbd61bd4476e5592334e7dba132735440b7e204ba' target="_blank" >Privacy Policy</a></li>
                           </ol>
                         </div>
                         </div>
@@ -66,7 +67,7 @@ const Footer = () => {
                         <div className='second-div '>
                           <ol>
                             <li>About Us</li>
-                            <li>Our Story</li>
+                            <li>History</li>
                           </ol>
                         </div>
                         </div>
