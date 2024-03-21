@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CustomProductsSubSection from '../../Helpers/CustomProductsSubSection';
+import CustomProductsSubSectionSecond from '../../Helpers/CustomProductsSubSectionSecond';
 
 const imagesArray = [
     {
@@ -41,19 +42,31 @@ const imagesArray = [
   ];
 
 
+  
+
+
+const Earrings = () => {
+  const [showFullContent, setShowFullContent] = useState(false);
+
+  const handleReadMoreClick = () => {
+    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
+  };
+  
   const contain = {
     imagesArray:imagesArray,
     heading:"Earrings",
     duration:3500,
     videoPath:'../videos/Necklace.mp4',
-    content: 'At our earrings section, we curate the latest trends and modern styles to complement your contemporary look. Our collection features a diverse range of earrings that are currently in vogue, from sleek geometric designs to minimalist ear cuffs and statement asymmetrical pieces. Explore our selection of modern materials such as resin, acrylic, and mixed metals, reflecting the current fashion landscape. Whether you\'re into bold, abstract shapes or subtle, elegant studs, we have the perfect pair to elevate your style game. Our trending earrings are crafted to resonate with the modern fashionista, offering versatility and chic appeal for any occasion. Discover the fusion of innovation and style in our modern earring collection, and stay ahead of the fashion curve with our carefully curated pieces.'
+    content: 'At our earrings section, we curate the latest trends and modern styles to complement your contemporary look. Our collection features a diverse range of earrings that are currently in vogue, from sleek geometric designs to minimalist ear cuffs and statement asymmetrical pieces. Explore our selection of modern materials such as resin, acrylic, and mixed metals, reflecting the current fashion landscape. Whether you\'re into bold, abstract shapes or subtle, elegant studs, we have the perfect pair to elevate your style game. Our trending earrings are crafted to resonate with the modern fashionista, offering versatility and chic appeal for any occasion. Discover the fusion of innovation and style in our modern earring collection, and stay ahead of the fashion curve with our carefully curated pieces.',
+    contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite earrings collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
+    showFullContent:showFullContent,
+    setShowFullContent:setShowFullContent,
+    handleReadMoreClick:handleReadMoreClick,
   };
 
-
-const Earrings = () => {
   return (
     <>
-     <CustomProductsSubSection data={contain} /> 
+     <CustomProductsSubSectionSecond data={contain} /> 
     </>
   )
 }

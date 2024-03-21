@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CustomProductsSubSection from '../../Helpers/CustomProductsSubSection';
+import CustomProductsSubSectionSecond from '../../Helpers/CustomProductsSubSectionSecond';
 
 const imagesArray = [
     {
@@ -40,20 +41,27 @@ const imagesArray = [
     }
   ];
 
+const Rings = () => {
+  const [showFullContent, setShowFullContent] = useState(false);
 
+  const handleReadMoreClick = () => {
+    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
+  };
+  
   const contain = {
     imagesArray: imagesArray,
     heading: "Rings",
     duration: 3500,
     videoPath: '../videos/Necklace.mp4',
-    content: 'Welcome to our rings section, where modern and trending styles take center stage. Our collection boasts a captivating array of contemporary designs that are currently in vogue. From sleek minimalist bands to eye-catching statement rings, we showcase the latest trends in the world of finger adornments. Embracing modern materials such as lustrous metals, dazzling gemstones, and unconventional mixed-media, our rings epitomize the current fashion landscape. Whether you\'re drawn to bold, architectural shapes or delicate, nature-inspired motifs, our selection caters to diverse tastes, ensuring the perfect ring to complement your style. Crafted with innovation and flair, our trending rings capture the essence of modern elegance, offering versatility and allure for any occasion. Explore our carefully curated collection to stay ahead of the fashion curve and infuse your look with the perfect blend of contemporary charm and timeless sophistication.'
+    content: 'Welcome to our rings section, where modern and trending styles take center stage. Our collection boasts a captivating array of contemporary designs that are currently in vogue. From sleek minimalist bands to eye-catching statement rings, we showcase the latest trends in the world of finger adornments. Embracing modern materials such as lustrous metals, dazzling gemstones, and unconventional mixed-media, our rings epitomize the current fashion landscape. Whether you\'re drawn to bold, architectural shapes or delicate, nature-inspired motifs, our selection caters to diverse tastes, ensuring the perfect ring to complement your style. Crafted with innovation and flair, our trending rings capture the essence of modern elegance, offering versatility and allure for any occasion. Explore our carefully curated collection to stay ahead of the fashion curve and infuse your look with the perfect blend of contemporary charm and timeless sophistication.',
+    contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite rings collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
+    showFullContent:showFullContent,
+    setShowFullContent:setShowFullContent,
+    handleReadMoreClick:handleReadMoreClick,
   };
   
-
-
-const Rings = () => {
   return (
-    <CustomProductsSubSection data={contain} /> 
+    <CustomProductsSubSectionSecond data={contain} /> 
   )
 }
 

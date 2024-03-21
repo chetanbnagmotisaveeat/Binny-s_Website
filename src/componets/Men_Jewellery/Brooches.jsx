@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CustomProductsSubSection from '../../Helpers/CustomProductsSubSection';
+import CustomProductsSubSectionSecond from '../../Helpers/CustomProductsSubSectionSecond';
 
 const imagesArray = [
     {
@@ -41,18 +42,30 @@ const imagesArray = [
   ];
 
 
+  
+
+
+const Brooches = () => {
+  const [showFullContent, setShowFullContent] = useState(false);
+
+  const handleReadMoreClick = () => {
+    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
+  };
+
   const contain = {
     imagesArray: imagesArray,
     heading: "Brooches",
     duration: 3500,
     videoPath: '../videos/Necklace.mp4',
-    content: `Welcome to our Brooches for men section, where modern sophistication meets the latest trends! Dive into a curated collection of brooches designed to elevate men's style with contemporary flair. From sleek minimalist designs to bold statement pieces, our brooches showcase the epitome of modern fashion. Discover trending styles including geometric shapes for a touch of avant-garde elegance and intricate enamel designs that add a pop of color to any ensemble. Our brooches are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability. Whether you're dressing up for a formal occasion or adding a unique touch to your everyday look, our Brooches for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending brooches that seamlessly blend contemporary design with timeless appeal.`
+    content: `Welcome to our Brooches for men section, where modern sophistication meets the latest trends! Dive into a curated collection of brooches designed to elevate men's style with contemporary flair. From sleek minimalist designs to bold statement pieces, our brooches showcase the epitome of modern fashion. Discover trending styles including geometric shapes for a touch of avant-garde elegance and intricate enamel designs that add a pop of color to any ensemble. Our brooches are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability. Whether you're dressing up for a formal occasion or adding a unique touch to your everyday look, our Brooches for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending brooches that seamlessly blend contemporary design with timeless appeal.`,
+    contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite Brooches collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
+    showFullContent:showFullContent,
+    setShowFullContent:setShowFullContent,
+    handleReadMoreClick:handleReadMoreClick,
   };
 
-
-const Brooches = () => {
   return (
-    <CustomProductsSubSection data={contain} />
+    <CustomProductsSubSectionSecond data={contain} />
   )
 }
 

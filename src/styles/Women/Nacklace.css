@@ -115,7 +115,7 @@
         text-align: justify;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        min-height: 450px;
+        min-height: 360px;
     }
     .image-name {
         font-size: 24px;
@@ -142,8 +142,8 @@
     }
     
     .circle-container {
-        width: 40px; 
-        height: 40px;
+        width: 60px; 
+        height: 60px;
         margin: 2px;
     }
     .decoration-line {

@@ -10,10 +10,9 @@ import { Button } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 
 const CustomProductsSubSectionSecond = ({ data }) => {
-    const { imagesArray, duration, heading, videoPath, content } = data;
+    const { imagesArray, duration, heading, videoPath, content ,contentMobile,handleReadMoreClick,showFullContent,setShowFullContent} = data;
     const [currentIndex, setCurrentIndex] = useState(0);
     const isSmallScreen = useMediaQuery({ maxWidth: 764 });
-
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -37,13 +36,13 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                 fluid
                 className="p-0 m-0 w-100 overflow-hidden"
             >
-                <div className="p-3 necklace-main-div-margin-top text-light ">
+                <div className={`${isSmallScreen ? 'pt-5' :'p-3'} necklace-main-div-margin-top text-light`}>
                     <Row className="p-0 m-0 ">
-                        <Col lg={12} className="necklace-heading mb-3">
+                        <Col lg={12} className="necklace-heading mb-4">
                             {heading}
                         </Col>
                         <Col lg={12} className="necklace-heading" style={{ height: '70vh', position: 'relative' }}>
-                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', padding: '10px' }}>
+                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', padding: isSmallScreen ? '0px' :'10px' }}>
                                 <video autoPlay loop muted playsInline className='w-100 h-100' style={{ objectFit: 'cover', borderRadius: "10px" }}>
                                     <source src={videoPath} type='video/mp4' />
                                 </video>
@@ -51,7 +50,20 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                         </Col>
                         <Col lg={12} className="">
                             <div className="necklace-sub-contain">
-                                {content}
+                              {isSmallScreen ? (<>
+                                 {
+                                    showFullContent ? (<>{contentMobile}
+                                     <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: '#FFF' }}> Read More...</span>
+                                    
+                                    </>):(<>{content} 
+                                        <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: '#FFF' }}>  Read Less...</span>
+                                    </>)
+                                 }
+                              </>):(<>
+                              {content}
+                              
+                              </>) 
+                              } 
                             </div>
 
                         </Col>
@@ -125,11 +137,11 @@ const CustomProductsSubSectionSecond = ({ data }) => {
 
                                     {
                                         isSmallScreen && (
-                                            <div className="col-lg-12 mt-5  d-flex justify-content-between flex-wrap">
+                                            <div className="p-0 m-0 col-lg-12 mt-5 mb-2  d-flex justify-content-between flex-wrap">
                                                 {imagesArray.map((image, index) => (
                                                     <div key={image.id} className="d-flex flex-column ">
 
-                                                        <div className={`circle-container ${index === currentIndex ? 'active' : ''}`} onClick={() => handleImageClick(index)}>
+                                                        <div className={`circle-container  ${index === currentIndex ? 'active' : ''}`}onClick={() => handleImageClick(index)}>
                                                             <img src={image.url} alt={`Image ${image.id}`} className="rounded-circle img-fluid" />
                                                         </div>
                                                         <motion.div 

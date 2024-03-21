@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CustomProductsSubSection from '../../Helpers/CustomProductsSubSection';
+import CustomProductsSubSectionSecond from '../../Helpers/CustomProductsSubSectionSecond';
 
 const imagesArray = [
     {
@@ -41,19 +42,31 @@ const imagesArray = [
   ];
 
 
+  
+
+
+
+const Rings = () => {
+  const [showFullContent, setShowFullContent] = useState(false);
+
+  const handleReadMoreClick = () => {
+    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
+  };
+  
   const contain = {
     imagesArray: imagesArray,
     heading: "Rings",
     duration: 3500,
     videoPath: '../videos/Necklace.mp4',
-    content: `Welcome to our Rings for men section, where modern sophistication meets the latest trends! Dive into a curated collection of rings designed to elevate men's style with contemporary flair. From sleek minimalist bands to bold statement pieces, our rings showcase the epitome of modern fashion.Discover trending styles including signet rings for a classic yet updated look, and textured bands that add a touch of rugged elegance to any outfit. Our rings are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability.Whether you're searching for a versatile ring to complement your everyday attire or a bold accessory to make a statement, our Rings for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending rings that seamlessly blend contemporary design with timeless appeal.`
+    content: `Welcome to our Rings for men section, where modern sophistication meets the latest trends! Dive into a curated collection of rings designed to elevate men's style with contemporary flair. From sleek minimalist bands to bold statement pieces, our rings showcase the epitome of modern fashion.Discover trending styles including signet rings for a classic yet updated look, and textured bands that add a touch of rugged elegance to any outfit. Our rings are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability.Whether you're searching for a versatile ring to complement your everyday attire or a bold accessory to make a statement, our Rings for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending rings that seamlessly blend contemporary design with timeless appeal.`,
+    contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite Bracelets collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
+    showFullContent:showFullContent,
+    setShowFullContent:setShowFullContent,
+    handleReadMoreClick:handleReadMoreClick,
   };
-
-
-
-const Rings = () => {
+  
   return (
-    <CustomProductsSubSection data={contain} />
+    <CustomProductsSubSectionSecond data={contain} />
   )
 }
 
