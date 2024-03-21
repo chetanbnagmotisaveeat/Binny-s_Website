@@ -62,14 +62,12 @@
 
   
 .image-name { 
-
     width: auto; 
     height: auto;
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 40px;
-    line-height: 72px;
-    border:1px solid rebeccapurple;
+    line-height: 72px;   
 }
 
 
@@ -82,8 +80,6 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     min-height: 228px;
-    border:1px solid rebeccapurple;
-
 }
 
 .button-Content{
@@ -93,9 +89,8 @@
     line-height: 22px;
 }
 .button-style{
-    margin-bottom: 3rem;
-    /* margin-bottom: 70px; */
-    /* margin-top: 10px; */
+    margin-bottom: 70px;
+    margin-top: 10px;
 }
 .img-col{
     height:100vh
