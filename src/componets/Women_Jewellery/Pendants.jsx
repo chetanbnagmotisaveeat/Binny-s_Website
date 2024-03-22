@@ -47,22 +47,16 @@ const imagesArray = [
 
 
 const Pendants = () => {
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const handleReadMoreClick = () => {
-    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
-  };
+  
 
   const contain = {
     imagesArray: imagesArray,
     heading: "Pendants",
-    duration: 3500,
+    duration: 5000,
     videoPath: '../videos/Necklace.mp4',
-    content: `Welcome to our Pendants section, where contemporary chic meets the latest trends! Dive into a carefully curated collection of pendants designed to infuse your style with modern sophistication. From sleek geometric shapes to intricately detailed designs, our pendants offer a diverse array of options that epitomize the essence of modern fashion. Explore our selection of trending styles, including minimalist pendants perfect for everyday wear and statement pieces that command attention with their bold elegance. Our pendants feature high-quality materials and exquisite craftsmanship, ensuring both style and longevity. Whether you're searching for a versatile pendant to complement any outfit or a standout piece to elevate your look, our Pendants section has something for every discerning taste. Elevate your jewelry collection with our modern and trending pendants that effortlessly blend contemporary flair with timeless elegance.`,
+    content: `Welcome to our Pendants section, where contemporary chic meets the latest trends! Dive into a carefully curated collection of pendants designed to infuse your style with modern sophistication. From sleek geometric shapes to intricately detailed designs, our pendants offer a diverse array of options that epitomize the essence of modern fashion. Explore our selection of trending styles, including minimalist pendants perfect for everyday wear and statement pieces that command attention with their bold elegance. Our pendants feature high-quality materials and exquisite craftsmanship, ensuring both style and longevity. Whether you're searching for a versatile pendant to complement any outfit or a standout piece to elevate your look, our Pendants section has something for every discerning taste. Elevate your jewelry collection with our modern and trending pendants that effortlessly blend contemporary flair with timeless elegance `,
     contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite Pendants collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
-    showFullContent:showFullContent,
-    setShowFullContent:setShowFullContent,
-    handleReadMoreClick:handleReadMoreClick,
+   
   };
   
   return (

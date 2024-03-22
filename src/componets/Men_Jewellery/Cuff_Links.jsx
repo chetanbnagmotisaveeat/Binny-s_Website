@@ -47,22 +47,16 @@ const imagesArray = [
 
 
 const Cuff_Links = () => {
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const handleReadMoreClick = () => {
-    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
-  };
+  
   
   const contain = {
     imagesArray: imagesArray,
     heading: "Cuff Links",
     duration: 3500,
     videoPath: '../videos/Necklace.mp4',
-    content: `Welcome to our Cufflinks for men section, where modern sophistication meets the latest trends! Explore a curated collection of cufflinks designed to elevate men's style with contemporary flair. From sleek minimalist designs to bold statement pieces, our cufflinks showcase the epitome of modern fashion.Discover trending styles including geometric shapes for a touch of avant-garde elegance and intricate enamel designs that add a pop of color to any ensemble. Our cufflinks are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability.Whether you're dressing up for a formal occasion or adding a polished touch to your everyday look, our Cufflinks for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending cufflinks that seamlessly blend contemporary design with timeless appeal.`,
+    content: `Welcome to our Cufflinks for men section, where modern sophistication meets the latest trends! Explore a curated collection of cufflinks designed to elevate men's style with contemporary flair. From sleek minimalist designs to bold statement pieces, our cufflinks showcase the epitome of modern fashion.Discover trending styles including geometric shapes for a touch of avant-garde elegance and intricate enamel designs that add a pop of color to any ensemble. Our cufflinks are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability.Whether you're dressing up for a formal occasion or adding a polished touch to your everyday look, our Cufflinks for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending cufflinks that seamlessly blend contemporary design with timeless appeal `,
     contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite Cufflinks collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
-    showFullContent:showFullContent,
-    setShowFullContent:setShowFullContent,
-    handleReadMoreClick:handleReadMoreClick,
+   
   };
 
   return (

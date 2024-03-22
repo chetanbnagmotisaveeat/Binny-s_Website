@@ -45,22 +45,16 @@ const imagesArray = [
 
 const Nacklace = () => {
 
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const handleReadMoreClick = () => {
-    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
-  };
+  
 
   const contain = {
     imagesArray:imagesArray,
     heading:"Necklace",
-    duration:6000,
+    duration:5000,
     videoPath:'../videos/Necklace.mp4',
-    content: `Discover the epitome of elegance with Binnys Jewellery's exquisite necklace collection, where timeless craftsmanship meets contemporary allure. Our curated selection features an array of captivating designs, each meticulously crafted to exude sophistication and style. Embrace modernity with our trend-setting necklaces, meticulously designed to complement the dynamic spirit of today's fashion-forward individual. From sleek and minimalist pieces to bold statement necklaces, our collection offers a diverse range of options to suit every occasion and personal style. At Binnys Jewellery, we pride ourselves on blending traditional artistry with avant-garde designs, ensuring each piece tells a unique story of elegance and innovation. Explore our collection and indulge in the luxurious allure of Binnys Jewellery's modern necklace designs`,
+    content: `Discover the epitome of elegance with Binnys Jewellery's exquisite necklace collection, where timeless craftsmanship meets contemporary allure. Our curated selection features an array of captivating designs, each meticulously crafted to exude sophistication and style. Embrace modernity with our trend-setting necklaces, meticulously designed to complement the dynamic spirit of today's fashion-forward individual. From sleek and minimalist pieces to bold statement necklaces, our collection offers a diverse range of options to suit every occasion and personal style. At Binnys Jewellery, we pride ourselves on blending traditional artistry with avant-garde designs, ensuring each piece tells a unique story of elegance and innovation. Explore our collection and indulge in the luxurious allure of Binnys Jewellery's modern necklace designs `,
     contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite necklace collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
-    showFullContent:showFullContent,
-    setShowFullContent:setShowFullContent,
-    handleReadMoreClick:handleReadMoreClick,
+    
 
   };
   return (

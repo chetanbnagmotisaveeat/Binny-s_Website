@@ -18,6 +18,12 @@ import Man_Cuff_Links from './componets/Men_Jewellery/Cuff_Links';
 import Man_Brooches from './componets/Men_Jewellery/Brooches';
 import OurTeam from './componets/OurTeam/OurTeam';
 import Book_Appointment from './componets/Book _Appointmen/Book_Appointment';
+import Belt from './componets/Accessories/Belt';
+import ButtonsAccessories from './componets/Accessories/ButtonsAccessories';
+import Pens from './componets/Accessories/Pens';
+import Watch from './componets/Accessories/Watch';
+import Him from './componets/Rubber_Bracelets/Him';
+import Her from './componets/Rubber_Bracelets/Her';
 
 
 function App() {
@@ -43,6 +49,16 @@ function App() {
             <Route exact path="chains" element={<Man_Chains />} />
             <Route exact path="cuff-links" element={<Man_Cuff_Links />} />
             <Route exact path="brooches" element={<Man_Brooches />} />
+          </Route>
+          <Route path='/accessories'>
+            <Route exact path="belt" element={<Belt />} />
+            <Route exact path="buttons" element={<ButtonsAccessories />} />
+            <Route exact path="Pens" element={<Pens />} />
+            <Route exact path="watch" element={<Watch />} />
+          </Route>
+          <Route path='/rubbers'>
+            <Route exact path="him" element={<Him/>} />
+            <Route exact path="her" element={<Her/>} />
           </Route>
           <Route exact path='our-Team' element={<OurTeam />} />
           <Route exact path='book-an-appointment' element={<Book_Appointment />} />

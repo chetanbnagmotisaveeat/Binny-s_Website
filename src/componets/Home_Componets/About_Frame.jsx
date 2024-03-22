@@ -49,6 +49,7 @@ const About_Frame = () => {
                   x: 100,
                  }}
                  whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                 viewport={{ once: true }}
                   // whileHover={{ scale: 1.005 }}
                 transition={{ duration: 1 }}
                  >
@@ -74,6 +75,7 @@ const About_Frame = () => {
                   x: 100,
                  }}
                  whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                 viewport={{ once: true }}
                   // whileHover={{ scale: 1.005 }}
                 transition={{ duration: 1 }}
               >

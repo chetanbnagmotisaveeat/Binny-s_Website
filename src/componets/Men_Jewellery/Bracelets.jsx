@@ -47,23 +47,15 @@ const imagesArray = [
 
 const Bracelets = () => {
 
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const handleReadMoreClick = () => {
-    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
-  };
-
   const contain = {
     imagesArray: imagesArray,
     heading: "Bracelets",
     duration: 3500,
     videoPath: '../videos/Necklace.mp4',
-    content: `Welcome to our Bracelets for men section, where modern sophistication meets the latest trends! Explore a curated collection of bracelets designed to elevate men's style with contemporary flair. From sleek minimalist designs to bold statement pieces, our bracelets showcase the epitome of modern fashion.Discover trending styles including leather cuffs for a rugged yet refined look, and sleek metal bracelets perfect for adding a touch of urban elegance to any outfit. Our bracelets are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability.Whether you're accessorizing a casual ensemble or adding a finishing touch to formal attire, our Bracelets for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending bracelets that seamlessly blend contemporary design with timeless appeal.`,
+    content: `Welcome to our Bracelets for men section, where modern sophistication meets the latest trends! Explore a curated collection of bracelets designed to elevate men's style with contemporary flair. From sleek minimalist designs to bold statement pieces, our bracelets showcase the epitome of modern fashion.Discover trending styles including leather cuffs for a rugged yet refined look, and sleek metal bracelets perfect for adding a touch of urban elegance to any outfit. Our bracelets are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability.Whether you're accessorizing a casual ensemble or adding a finishing touch to formal attire, our Bracelets for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending bracelets that seamlessly blend contemporary design with timeless appeal `,
     contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite Bracelets collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
-    showFullContent:showFullContent,
-    setShowFullContent:setShowFullContent,
-    handleReadMoreClick:handleReadMoreClick,
   };
+  
   return (
      <CustomProductsSubSectionSecond data={contain} />
   )

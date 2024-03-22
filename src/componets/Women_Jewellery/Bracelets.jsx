@@ -47,22 +47,15 @@ const imagesArray = [
 
 
 const Bracelets = () => {
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const handleReadMoreClick = () => {
-    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
-  };
-  
+   
   const contain = {
     imagesArray: imagesArray,
     heading: "Bracelets",
-    duration: 3500,
+    duration: 5000,
     videoPath: '../videos/Necklace.mp4',
-    content: `Welcome to our bracelets section, where modern sophistication meets the latest trends! Explore a handpicked collection of bracelets crafted to add contemporary elegance to your style. From sleek minimalist designs to eye-catching statement pieces, our bracelets showcase the epitome of modern fashion. Discover trending styles including sleek bangles for effortless layering and delicate chains adorned with unique charms that exude charm and personality. Our bracelets are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability. Whether you're searching for a versatile bracelet to complement your everyday look or a bold accessory to make a statement, our Bracelets section offers something for every occasion. Elevate your jewelry collection with our modern and trending bracelets that seamlessly blend contemporary.`,
+    content: `Welcome to our bracelets section, where modern sophistication meets the latest trends! Explore a handpicked collection of bracelets crafted to add contemporary elegance to your style. From sleek minimalist designs to eye-catching statement pieces, our bracelets showcase the epitome of modern fashion. Discover trending styles including sleek bangles for effortless layering and delicate chains adorned with unique charms that exude charm and personality. Our bracelets are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability. Whether you're searching for a versatile bracelet to complement your everyday look or a bold accessory to make a statement, our Bracelets section offers something for every occasion. Elevate your jewelry collection with our modern and trending bracelets that seamlessly blend contemporary `,
     contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite bracelets collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
-    showFullContent:showFullContent,
-    setShowFullContent:setShowFullContent,
-    handleReadMoreClick:handleReadMoreClick,
+   
   };
 
   return (

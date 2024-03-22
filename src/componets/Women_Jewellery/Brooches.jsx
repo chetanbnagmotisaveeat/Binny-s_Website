@@ -46,22 +46,16 @@ const imagesArray = [
 
 
 const Brooches = () => {
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const handleReadMoreClick = () => {
-    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
-  };
+ 
 
   const contain = {
     imagesArray: imagesArray,
     heading: "Brooches",
     duration: 5000,
     videoPath: '../videos/Necklace.mp4',
-    content: `Welcome to our brooches section, where tradition meets modern elegance in timeless fashion! Explore a curated collection of Mangal Sutras designed to blend cultural significance with contemporary trends. From classic designs with a modern twist to innovative interpretations of this cherished symbol, our Mangal Sutras embody the essence of modern sophistication. Discover trending styles including sleek chains adorned with minimalist pendants and intricately designed Mangal Sutras featuring symbolic motifs reimagined for today's fashion-forward individuals. Our Mangal Sutras are crafted with precision and attention to detail using high-quality materials, ensuring both style and longevity. Whether you're celebrating a special occasion or seeking a meaningful accessory to express your cultural heritage, our Mangal Sutra section offers something for every modern bride or jewelry enthusiast. Elevate your look with our modern and trending Mangal Sutras that honor tradition while embracing contemporary elegance.`,
+    content: `Welcome to our brooches section, where tradition meets modern elegance in timeless fashion! Explore a curated collection of Mangal Sutras designed to blend cultural significance with contemporary trends. From classic designs with a modern twist to innovative interpretations of this cherished symbol, our Mangal Sutras embody the essence of modern sophistication. Discover trending styles including sleek chains adorned with minimalist pendants and intricately designed Mangal Sutras featuring symbolic motifs reimagined for today's fashion-forward individuals. Our Mangal Sutras are crafted with precision and attention to detail using high-quality materials, ensuring both style and longevity. Whether you're celebrating a special occasion or seeking a meaningful accessory to express your cultural heritage, our Mangal Sutra section offers something for every modern bride or jewelry enthusiast. Elevate your look with our modern and trending Mangal Sutras that honor tradition while embracing contemporary elegance `,
     contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite brooches collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
-    showFullContent:showFullContent,
-    setShowFullContent:setShowFullContent,
-    handleReadMoreClick:handleReadMoreClick,
+    
   };
 
   return (

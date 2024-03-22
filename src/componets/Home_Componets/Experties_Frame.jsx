@@ -69,6 +69,7 @@ const Experties_Frame = () => {
                 x: 50,
                }}
                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+               viewport={{ once: true }}
                 // whileHover={{ scale: 1.005 }}
               transition={{ duration: 1 }}
                
@@ -92,6 +93,7 @@ const Experties_Frame = () => {
                 x: 50,
                }}
                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+               viewport={{ once: true }}
                 // whileHover={{ scale: 1.005 }}
               transition={{ duration: 1 }}
               

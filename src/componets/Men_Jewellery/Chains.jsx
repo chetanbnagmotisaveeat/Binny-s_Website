@@ -47,22 +47,15 @@ const imagesArray = [
 
 
 const Chains = () => {
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const handleReadMoreClick = () => {
-    setShowFullContent(!showFullContent); // Toggle the value of showFullContent
-  };
   
   const contain = {
     imagesArray: imagesArray,
     heading: "Chains",
     duration: 3500,
     videoPath: '../videos/Necklace.mp4',
-    content: `Welcome to our Chains for men section, where modern sophistication meets the latest trends! Explore a curated collection of chains designed to elevate men's style with contemporary flair. From sleek minimalist designs to bold statement pieces, our chains showcase the epitome of modern fashion.Discover trending styles including chunky link chains for a bold and urban look, and sleek stainless steel chains that exude understated elegance. Our chains are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability.Whether you're accessorizing a casual ensemble or adding a touch of refinement to formal attire, our Chains for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending chains that seamlessly blend contemporary design with timeless appeal.`,
+    content: `Welcome to our Chains for men section, where modern sophistication meets the latest trends! Explore a curated collection of chains designed to elevate men's style with contemporary flair. From sleek minimalist designs to bold statement pieces, our chains showcase the epitome of modern fashion.Discover trending styles including chunky link chains for a bold and urban look, and sleek stainless steel chains that exude understated elegance. Our chains are meticulously crafted using premium materials and expert craftsmanship, ensuring both style and durability.Whether you're accessorizing a casual ensemble or adding a touch of refinement to formal attire, our Chains for men section offers something for every modern gentleman. Elevate your accessory game with our modern and trending chains that seamlessly blend contemporary design with timeless appeal `,
     contentMobile: `Discover the epitome of elegance with Binnys Jewellery's exquisite Chains collection, where timeless craftsmanship meets contemporary allure.Our curated selection features an array of captivating designs,`,
-    showFullContent:showFullContent,
-    setShowFullContent:setShowFullContent,
-    handleReadMoreClick:handleReadMoreClick,
+   
   };
 
   return (

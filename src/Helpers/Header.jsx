@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Container, Nav, NavDropdown, Navbar, Offcanvas } from 'react-bootstrap';
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
@@ -23,6 +23,19 @@ const manSection=[
   
 ]
 
+const accessoriesSection=[
+    {to:"/accessories/belt",name:'Belt'},
+    {to:"/accessories/buttons",name:'Buttons'},
+    {to:"/accessories/Pens",name:'Pens'},
+    {to:"/accessories/watch",name:'Watch'}  
+]
+
+const rubberSection=[
+    {to:"/rubbers/him",name:'Him'},
+    {to:"/rubbers/her",name:'Her'},
+   
+]
+
 const Header = () => {
     const [clickedCollection, setClickedCollection] = useState(false);
     const [rubberBracelets, setRubberBracelets] = useState(false);
@@ -30,7 +43,8 @@ const Header = () => {
     const [menJewellery, setMenJewellery] = useState(false);
     const [accessories, setAccessories] = useState(false);
     const [show, setShow] = useState(false);
-
+    
+    const offcanvasRef = useRef(null);
     const handleClose = () => setShow(false);
 
 
@@ -71,7 +85,20 @@ const Header = () => {
         setShow(!show)
 
     };
+    
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (offcanvasRef.current && !offcanvasRef.current.contains(event.target)) {
+                setShow(false);
+            }
+        };
 
+        document.addEventListener('mousedown', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, [offcanvasRef]);
 
 
     return (
@@ -101,7 +128,7 @@ const Header = () => {
 
                             >
                                 <Offcanvas.Header closeButton  onClick={handleToggleClick}/>
-                                <Offcanvas.Body>
+                                <Offcanvas.Body ref={offcanvasRef}>
                                     <Nav className="justify-content-end flex-grow-1 pe-3">
                                         {!clickedCollection && (
                                             <>
@@ -201,8 +228,13 @@ const Header = () => {
                                         {
                                             rubberBracelets && (
                                                 <>
-                                                    <CustomNavLink to="/him" onClick={handleClose}>Him</CustomNavLink>
-                                                    <CustomNavLink to="/her" onClick={handleClose}>Her</CustomNavLink>
+                                                {
+                                                    rubberSection && rubberSection.map((rubber,index)=>{
+                                                        return (
+                                                      <CustomNavLink key={`${rubber.name}+${index}`} to={rubber.to} onClick={handleClose}>{rubber.name}</CustomNavLink>
+                                                        )
+                                                    })
+                                                }
                                                 </>
                                             )
                                         }
@@ -237,11 +269,15 @@ const Header = () => {
                                         {
                                             accessories && (
                                                 <>
-                                                    <CustomNavLink to="/watch" onClick={handleClose}>Watch</CustomNavLink>
-                                                    <CustomNavLink to="/belt" onClick={handleClose}>Belt</CustomNavLink>
-                                                    <CustomNavLink to="/phones" onClick={handleClose}>Phones</CustomNavLink>
-                                                    <CustomNavLink to="/pens" onClick={handleClose}>Pens</CustomNavLink>
-                                                    <CustomNavLink to="/buttons" onClick={handleClose}>Buttons</CustomNavLink>
+                                                {
+                                                    accessoriesSection && accessoriesSection.map((assc,index)=>{
+                                                        return (
+                                                      <CustomNavLink key={`${assc.name}+${index}`} to={assc.to} onClick={handleClose}>{assc.name}</CustomNavLink>
+
+                                                        )
+                                                    })
+                                                }
+                                                    
                                                 </>
                                             )
                                         }

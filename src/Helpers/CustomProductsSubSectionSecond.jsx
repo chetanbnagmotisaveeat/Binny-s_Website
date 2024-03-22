@@ -11,7 +11,14 @@ import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
 const CustomProductsSubSectionSecond = ({ data }) => {
-    const { imagesArray, duration, heading, videoPath, content ,contentMobile,handleReadMoreClick,showFullContent,setShowFullContent} = data;
+
+    const [showFullContent, setShowFullContent] = useState(true);
+
+    const handleReadMoreClick = () => {
+      setShowFullContent(!showFullContent); 
+    };
+
+    const { imagesArray, duration, heading, videoPath, content ,contentMobile} = data;
     const [currentIndex, setCurrentIndex] = useState(0);
     const isSmallScreen = useMediaQuery({ maxWidth: 764 });
 
@@ -136,9 +143,10 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                         )
                                     }
 
-                                    {
+                                    {   
+                                   
                                         isSmallScreen && (
-                                            <div className="p-0 m-0 col-lg-12 mt-4 mb-2  d-flex justify-content-between flex-wrap">
+                                            <div className={`p-0 m-0 col-lg-12 mt-4 mb-2  d-flex ${imagesArray.length < 6 ? "justify-content-around":"justify-content-between"} flex-wrap`}>
                                                 {imagesArray.map((image, index) => (
                                                     <div key={image.id} className="d-flex flex-column ">
 
@@ -197,7 +205,8 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                     </div>
                                     {
                                         !isSmallScreen && (
-                                            <div className="col-lg-12  d-flex justify-content-between flex-wrap">
+                                            <div className={`col-lg-12 d-flex ${imagesArray.length < 6 ? "gap-4" : "justify-content-between"} flex-wrap`}>
+
                                                 {imagesArray.map((image, index) => (
                                                     <div key={`${image.id}-${index}-${image.name}`} className="d-flex flex-column">
                                                         <div className={`circle-container ${index === currentIndex ? 'active' : ''}`} onClick={() => handleImageClick(index)}>
