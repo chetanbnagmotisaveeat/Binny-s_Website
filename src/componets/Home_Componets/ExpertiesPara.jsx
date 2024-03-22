@@ -59,7 +59,7 @@ const ExpertiesPara = () => {
                             to elevate every moment. Immerse yourself in the beauty of
                             Binny's jewelry and find the perfect expression of your
                             individuality and taste
-                            <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: '#FFF' }}>  Read Less...</span>
+                            <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer',color: 'pink',fontWeight:500 }}>  Read Less...</span>
                         </p>
                     </>) : (<>
                         <p>
@@ -73,7 +73,7 @@ const ExpertiesPara = () => {
                             add bling in your everyday wear, to accessories that reflect
                             and shine your personalities with diamonds. our collections
                             showcase the finest materials and exquisite detailing
-                            <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: '#FFF' }}> Read More...</span>
+                            <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink',fontWeight:500 }}> Read More...</span>
                         </p>
 
                     </>)

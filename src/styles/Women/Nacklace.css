@@ -44,12 +44,14 @@
     overflow: hidden; /* Hides any overflow content */
     background-color: #000000;
     margin-bottom: 20px; /* Adjust spacing between images */
+    cursor: pointer;
   }
   
   .circle-container img {
     width: 100%; /* Ensures the image fills the circular container */
     height: 100%; /* Ensures the image fills the circular container */
     object-fit: cover; /* Scales the image to cover the circular container */
+    cursor: pointer;
   }
   
   .decoration-line {
@@ -75,7 +77,7 @@
 .content-container {
     width: 72%; 
     font-family: 'Karla', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
     line-height: 36px;
     margin-top: 3rem;

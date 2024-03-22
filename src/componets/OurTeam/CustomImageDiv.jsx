@@ -16,6 +16,7 @@ const CustomImageDiv = ({ curElem, outerIndex, innerIndex }) => {
       }}
       whileInView={{ opacity: 1, scale: 1, x: 0 }}
       whileHover={{ scale: 1.1 }}
+      viewport={{ once: true }}
       transition={{ duration: 1 }}
     >
       <div className="person">

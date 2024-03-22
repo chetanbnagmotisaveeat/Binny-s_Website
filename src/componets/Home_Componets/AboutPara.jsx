@@ -61,7 +61,7 @@ const AboutPara = () => {
                                 gemstone and metal is chosen with precision to ensure a
                                 perfect blend of aesthetics and durability. Binny's, where
                                 legacy meets luxury in a celebration of timeless beauty
-                                <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: '#FFF' }}>  Read Less...</span>
+                                <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink' ,fontWeight:500}}>  Read Less...</span>
                             </p>
 
                         </>
@@ -74,7 +74,7 @@ const AboutPara = () => {
                             jewellery that transcends time. Our unique designs seamlessly
                             blend tradition with modern trends, creating timeless pieces
                             that resonate with the essence of luxury
-                            <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: '#FFF' }}> Read More...</span>
+                            <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink',fontWeight:500 }}> Read More...</span>
 
                         </p>
 

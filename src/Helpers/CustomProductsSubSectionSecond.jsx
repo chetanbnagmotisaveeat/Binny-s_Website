@@ -61,10 +61,10 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                               {isSmallScreen ? (<>
                                  {
                                     showFullContent ? (<>{contentMobile}
-                                     <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink' }}> Read More...</span>
+                                     <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink',fontWeight:500}}> Read More...</span>
                                     
                                     </>):(<>{content} 
-                                        <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink' }}>  Read Less...</span>
+                                        <span onClick={handleReadMoreClick} style={{ padding: '0px', margin: '0px', cursor: 'pointer', color: 'pink',fontWeight:500 }}>  Read Less...</span>
                                     </>)
                                  }
                               </>):(<>
