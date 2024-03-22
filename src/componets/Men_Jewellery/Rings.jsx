@@ -13,13 +13,14 @@ const imagesArray = [
       id: 2,
       url: '../images/Man/Rings/Ring-2.png',
       name: 'Ring-2',
-      content: 'This luxurious Ring features intricate silver metalwork, meticulously framing three prominent elements: sparkling diamonds, a large pearl, and sleek sterling silver. Whether worn at a gala or a special celebration, it embodies grace and timeless elegance.'
+      content: 'The Ring in the image is a simple yet elegant piece featuring a circular pattern with white beads. It is adorned with a beautiful pendant, adding a touch of sophistication to the overall design. The necklace is made of high-quality materials, making it a versatile and stylish accessory that can be worn with various outfits.'
+
     },
     {
       id: 3,
       url: '../images/Man/Rings/Ring-3.png',
       name: 'Ring-3',
-      content: 'The Ring is made of white beads and features a pendant. The beads are arranged in a circular pattern, creating a visually appealing design. The pendant adds a touch of elegance to the overall look of the necklace.'
+      content: 'The Ring in the image is a simple yet elegant piece featuring a circular pattern with white beads. It is adorned with a beautiful pendant, adding a touch of sophistication to the overall design. The necklace is made of high-quality materials, making it a versatile and stylish accessory that can be worn with various outfits.'
     },
     {
       id: 4,
