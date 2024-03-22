@@ -133,7 +133,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                                             <img
                                                                 src={image.url}
                                                                 alt={image.name}
-                                                                className="rounded-circle img-fluid img-responsive"
+                                                                className="img-fluid img-responsive"
                                                             />
                                                         </motion.div>
                                                     ))}
@@ -179,7 +179,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                     <div className="col-lg-12 content-container d-flex justify-contain-start" style={{
 
                                     }}>
-                                        <div style={{ overflowX: "hidden", minHeight: '220px', overflowY: 'hidden', textAlign: 'justify' }}>
+                                        <div style={{ overflowX: "hidden", minHeight: '221px', overflowY: 'hidden', textAlign: 'justify' }}>
                                             <motion.div
                                                 key={`content-container${currentImage.id}`}
                                                 initial={{ scale: 0.5, opacity: 0.5, transformOrigin: "left" }} // Initial scale is smaller, opacity is 0 (hidden), and transform origin is set to the center
@@ -268,7 +268,7 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                                     <img
                                                         src={image.url}
                                                         alt={image.name}
-                                                        className="rounded-circle img-fluid img-responsive"
+                                                        className="img-fluid img-responsive"
                                                     />
                                                 </motion.div>
                                             ))}

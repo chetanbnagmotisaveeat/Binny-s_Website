@@ -19,7 +19,7 @@ const imagesArray = [
       id: 3,
       url: '../images/Man/CuffLinks/cufflink-3.png',
       name: 'Cuff Links-3',
-      content: 'The Cuff Links is made of white beads and features a pendant. The beads are arranged in a circular pattern, creating a visually appealing design. The pendant adds a touch of elegance to the overall look of the necklace.'
+      content: 'The Cuff Links in the image is a simple yet elegant piece featuring a circular pattern with white beads. It is adorned with a beautiful pendant, adding a touch of sophistication to the overall design. The necklace is made of high-quality materials, making it a versatile and stylish accessory that can be worn with various outfits.'
     },
     {
       id: 4,
