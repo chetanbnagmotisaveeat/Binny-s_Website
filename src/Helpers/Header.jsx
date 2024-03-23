@@ -127,8 +127,8 @@ const Header = () => {
 
 
                             >
-                                <Offcanvas.Header closeButton  onClick={handleToggleClick}/>
-                                <Offcanvas.Body ref={offcanvasRef}>
+                                <Offcanvas.Header closeButton ref={offcanvasRef} onClick={handleToggleClick}/>
+                                <Offcanvas.Body >
                                     <Nav className="justify-content-end flex-grow-1 pe-3">
                                         {!clickedCollection && (
                                             <>
