@@ -24,6 +24,7 @@ import Pens from './componets/Accessories/Pens';
 import Watch from './componets/Accessories/Watch';
 import Him from './componets/Rubber_Bracelets/Him';
 import Her from './componets/Rubber_Bracelets/Her';
+import Gallary_Frame from './componets/Home_Componets/Gallary_Frame';
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
             <Route exact path="her" element={<Her/>} />
           </Route>
           <Route exact path='our-Team' element={<OurTeam />} />
+          <Route exact path='gallery' element={<Gallary_Frame />} />
           <Route exact path='book-an-appointment' element={<Book_Appointment />} />
 
         </Routes>
