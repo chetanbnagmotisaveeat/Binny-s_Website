@@ -53,8 +53,8 @@ const Footer = () => {
                         <div className='second-div'>
                           <ol>
                           
-                            <li><a href='https://workdrive.zohopublic.in/external/writer/b1374ad73a5f31af0a69e85c63ec1ee1bbdd88359a6b8e14f7a9333ecb7519bc' target="_blank" >Terms of Use</a></li>
-                            <li><a href='https://workdrive.zohopublic.in/external/writer/409873d86098403b12f39a6cbd61bd4476e5592334e7dba132735440b7e204ba' target="_blank" >Privacy Policy</a></li>
+                            <li><a href='https://www.canva.com/design/DAGAle3FpjA/GM9Ucie0gG7ZO8k4CFoswA/view?utm_content=DAGAle3FpjA&utm_campaign=designshare&utm_medium=link&utm_source=editor' target="_blank" >Terms of Use</a></li>
+                            <li><a href='https://www.canva.com/design/DAGAlHvNJ3c/uFneNodxnB_LwNbWSEa7nQ/view?utm_content=DAGAlHvNJ3c&utm_campaign=designshare&utm_medium=link&utm_source=editor' target="_blank" >Privacy Policy</a></li>
                           </ol>
                         </div>
                         </div>
