@@ -63,7 +63,7 @@ const Footer = () => {
                       </Col>
                       <Col xs={3} md={3} lg={3} sm={6} className='footer-gap '>
                         <div className='footer-gap-div'>
-                        <div className='heading'>About Us</div>
+                        <div className='heading'>About</div>
                         <div className='second-div '>
                           <ol>
                             <li>About Us</li>
@@ -81,9 +81,9 @@ const Footer = () => {
                       <div className='heading'>Follow Us</div>
                         <div className="icon  w-25">
                           <a href='https://www.instagram.com/binnysjewellery/?hl=en' target="_blank" ><i className="bi bi-facebook ml-3" ></i></a>
-                          <i className="bi bi-twitter ml-3"></i>
-                          <i className="bi bi-instagram ml-3" ></i>
-                          <i className="bi bi-linkedin" ></i>
+                          <i className="bi bi-twitter ml-3" style={{color:'#fff'}}></i>
+                          <i className="bi bi-instagram ml-3"  style={{color:'#fff'}}></i>
+                          <i className="bi bi-linkedin"  style={{color:'#fff'}}></i>
                         </div>
                       </div>
                       </Col>
@@ -95,11 +95,9 @@ const Footer = () => {
             </>
           ):(
             <>
-            {/* <Row className=''> */}
-              {/* <Col className="d-flex position-relative p-0 m-0 w-100"> */}
-                {/* <Container className='border border-1 border-primary' > */}
-                    <Row className='w-100 mt-1 text-light border border-1 border-primary' style={{gap:'3.1rem'}}>
-                    <Col  className='footer-gap border border-1 border-primary'  >
+          
+                    <Row className='w-100 mt-1 text-light' style={{gap:'3.1rem'}}>
+                    <Col  className='footer-gap'  >
                       <div className='footer-gap-div-small'>
                         <div className='heading' >Services</div>
                         <div className='second-div'>
@@ -111,7 +109,7 @@ const Footer = () => {
 
 
                     </Col>
-                    <Col className='footer-gap border border-1 border-primary'>
+                    <Col className='footer-gap'>
                       <div className='footer-gap-div-small'>
                       <div className='heading'>Corporate</div>
                       <div className='second-div'>
@@ -124,8 +122,8 @@ const Footer = () => {
 
                     </Col>
                     </Row>
-                    <Row className='w-100 mt-4 text-light border border-1 border-primary' style={{gap:'3.1rem'}}>
-                    <Col   className='footer-gap border border-1 border-primary'>
+                    <Row className='w-100 mt-4 text-light ' style={{gap:'3.1rem'}}>
+                    <Col   className='footer-gap '>
                       <div  className='footer-gap-div-small'>
                       <div className='heading'>Legal Terms</div>
                       <div className='second-div'>
@@ -139,10 +137,10 @@ const Footer = () => {
                      
 
                     </Col>
-                    <Col className='footer-gap border border-1 border-primary'>
+                    <Col className='footer-gap '>
                      
                       <div className='footer-gap-div-small'>
-                      <div className='heading'>About Us</div>
+                      <div className='heading'>About</div>
                       <div className='second-div'>
                         <ol>
                           <li>About Us</li>
@@ -154,29 +152,27 @@ const Footer = () => {
 
                     </Row>
                 
-                  <Row className='w-100 mt-4 text-light border border-1 border-primary' style={{gap:'3.1rem'}}>
+                  <Row className='w-100 mt-4 text-light' style={{gap:'3.1rem'}}>
                     
-                    <Col className='footer-gap border border-1 border-primary ' > 
+                    <Col className='footer-gap ' > 
                     <div className='footer '>
                     <div className='footer-gap-icon-small '>
                     <div className='heading'>Follow Us</div>
                       <div className="icon  w-25">
                         <a href='https://www.instagram.com/binnysjewellery/?hl=en' target="_blank" ><i className="bi bi-facebook ml-3" ></i></a>
-                        <i className="bi bi-twitter ml-3"></i>
-                        <i className="bi bi-instagram ml-3" ></i>
-                        <i className="bi bi-linkedin" ></i>
+                        <i className="bi bi-twitter ml-3" style={{color:'#fff'}}></i>
+                        <i className="bi bi-instagram ml-3"  style={{color:'#fff'}}></i>
+                        <i className="bi bi-linkedin"  style={{color:'#fff'}}></i>
                       </div>
                     </div>
 
                     </div>
                     </Col>
-                    {/* <Col className='footer-gap border border-1 border-primary ' > 
                    
-                    </Col> */}
+                   
+                  
                   </Row>
-                {/* </Container> */}
-              {/* </Col> */}
-            {/* </Row> */}
+              
 
           </>
           )

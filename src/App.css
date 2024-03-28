@@ -51,7 +51,8 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    color: rgb(187, 182, 182);
+    /* color: rgb(187, 182, 182); */
+    color: #fff;
     text-decoration: none;
 }
 
@@ -102,7 +103,8 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    color: rgb(187, 182, 182);
+    /* color: rgb(187, 182, 182); */
+    color: #fff
 }
 
 
