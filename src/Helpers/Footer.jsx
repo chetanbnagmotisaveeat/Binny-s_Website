@@ -96,7 +96,7 @@ const Footer = () => {
           ):(
             <>
           
-                    <Row className='w-100 mt-1 text-light' style={{gap:'3.1rem'}}>
+                    <Row className='w-100 mt-4 text-light' style={{gap:'3.1rem'}}>
                     <Col  className='footer-gap'  >
                       <div className='footer-gap-div-small'>
                         <div className='heading' >Services</div>
@@ -122,7 +122,7 @@ const Footer = () => {
 
                     </Col>
                     </Row>
-                    <Row className='w-100 mt-4 text-light ' style={{gap:'3.1rem'}}>
+                    <Row className='w-100 mt-5  text-light ' style={{gap:'3.1rem'}}>
                     <Col   className='footer-gap '>
                       <div  className='footer-gap-div-small'>
                       <div className='heading'>Legal Terms</div>
@@ -152,7 +152,7 @@ const Footer = () => {
 
                     </Row>
                 
-                  <Row className='w-100 mt-4 text-light' style={{gap:'3.1rem'}}>
+                  <Row className='w-100 mt-5 mb-5 text-light' style={{gap:'3.1rem'}}>
                     
                     <Col className='footer-gap ' > 
                     <div className='footer '>
