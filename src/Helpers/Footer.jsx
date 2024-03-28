@@ -17,7 +17,7 @@ const Footer = () => {
     >
       <Container fluid className='footer-main-div mt-2'>
         {
-          !isSmallScreen && (
+          (
             <>
               <Row className='p-0 m-0 w-75'>
                 <Col xs={6} md={12} lg={3} className="d-flex position-relative p-0 m-0 w-100">
