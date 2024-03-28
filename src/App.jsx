@@ -25,6 +25,7 @@ import Watch from './componets/Accessories/Watch';
 import Him from './componets/Rubber_Bracelets/Him';
 import Her from './componets/Rubber_Bracelets/Her';
 import Gallary_Frame from './componets/Home_Componets/Gallary_Frame';
+import Store_Locator from './componets/Store_Locator/Store_Locator';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
 
     <>
       <div style={{ backgroundColor: '#101010' ,display: 'flex', flexDirection: 'column' }}>
-        <Header />
+        <Header/>
         <Routes scrollToTop>
           <Route exact path="/" element={<Home />} />
           <Route path="/women">
@@ -64,6 +65,8 @@ function App() {
           <Route exact path='our-Team' element={<OurTeam />} />
           <Route exact path='gallery' element={<Gallary_Frame />} />
           <Route exact path='book-an-appointment' element={<Book_Appointment />} />
+          <Route exact path='store' element={<Store_Locator />} />
+
 
         </Routes>
         <hr style={{ borderTop: '3px solid #fff', width: '98%', alignSelf: 'center', marginBottom: '10px' }} />

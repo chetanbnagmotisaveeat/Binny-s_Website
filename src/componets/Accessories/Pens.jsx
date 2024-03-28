@@ -53,7 +53,7 @@ const Pens = () => {
       };
       
       return (
-         <CustomProductsSubSectionSecond data={contain} />
+         <CustomProductsSubSectionSecond data={contain}/>
       )
 }
 

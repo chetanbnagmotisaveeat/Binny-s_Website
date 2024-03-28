@@ -20,24 +20,24 @@ const imagesArray = [
       name: 'Buttons-3',
       content: 'The Buttons is made of white beads and features a pendant. The beads are arranged in a circular pattern, creating a visually appealing design. The pendant adds a touch of elegance to the overall look of the necklace.'
     },
-    // {
-    //   id: 4,
-    //   url: '../images/Accessories/Buttons/Button-4.png',
-    //   name: 'Buttons-4',
-    //   content: 'The Buttons in the image is a white beaded piece with a circular pattern, featuring a beautiful pendant. The beads are likely made of glass or a similar material, and the pendant adds a touch of elegance to the overall design. The necklace is a simple yet stylish accessory that can be worn with various outfits.'
-    // },
-    // {
-    //   id: 5,
-    //   url: '../images/Accessories/Buttons/Button-5.png',
-    //   name: 'Buttons-5',
-    //   content: 'The Buttons in the image is a simple yet elegant piece featuring a circular pattern with white beads. It is adorned with a beautiful pendant, adding a touch of sophistication to the overall design. The necklace is made of high-quality materials, making it a versatile and stylish accessory that can be worn with various outfits.'
-    // },
-    // {
-    //   id: 6,
-    //   url: '../images/Accessories/Buttons/Button-6.png',
-    //   name: 'Buttons-6',
-    //   content: 'This luxurious Buttons features intricate silver metalwork, meticulously framing three prominent elements: sparkling diamonds, a large pearl, and sleek sterling silver. Whether worn at a gala or a special celebration, it embodies grace and timeless elegance.'
-    // }
+    {
+      id: 4,
+      url: '../images/Accessories/Buttons/Button-1.png',
+      name: 'Buttons-4',
+      content: 'The Buttons in the image is a white beaded piece with a circular pattern, featuring a beautiful pendant. The beads are likely made of glass or a similar material, and the pendant adds a touch of elegance to the overall design. The necklace is a simple yet stylish accessory that can be worn with various outfits.'
+    },
+    {
+      id: 5,
+      url: '../images/Accessories/Buttons/Button-2.png',
+      name: 'Buttons-5',
+      content: 'The Buttons in the image is a simple yet elegant piece featuring a circular pattern with white beads. It is adorned with a beautiful pendant, adding a touch of sophistication to the overall design. The necklace is made of high-quality materials, making it a versatile and stylish accessory that can be worn with various outfits.'
+    },
+    {
+      id: 6,
+      url: '../images/Accessories/Buttons/Button-3.png',
+      name: 'Buttons-6',
+      content: 'This luxurious Buttons features intricate silver metalwork, meticulously framing three prominent elements: sparkling diamonds, a large pearl, and sleek sterling silver. Whether worn at a gala or a special celebration, it embodies grace and timeless elegance.'
+    }
   ];
 
 

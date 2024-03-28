@@ -4,7 +4,7 @@ import CustomProductsSubSectionSecond from '../../Helpers/CustomProductsSubSecti
 const imagesArray = [
     {
       id: 1,
-      url: '../images/Accessories/Watch/watch-1.png',
+      url: '../images/Accessories/Watch/watch-5.png',
       name: 'Watch-1',
       content: 'This luxurious Watch features intricate silver metalwork, elegantly framing three prominent red gemstones. The centerpiece is a large teardrop shape, flanked by two smaller oval stones. The meticulous craftsmanship and opulent design make it a striking accessory for special occasions.'
     },
@@ -32,12 +32,12 @@ const imagesArray = [
       name: 'Watch-5',
       content: 'The Watch in the image is a simple yet elegant piece featuring a circular pattern with white beads. It is adorned with a beautiful pendant, adding a touch of sophistication to the overall design. The necklace is made of high-quality materials, making it a versatile and stylish accessory that can be worn with various outfits.'
     },
-    // {
-    //   id: 6,
-    //   url: '../images/Accessories/Watch/watch-6.png',
-    //   name: 'Watch-6',
-    //   content: 'This luxurious Watch features intricate silver metalwork, meticulously framing three prominent elements: sparkling diamonds, a large pearl, and sleek sterling silver. Whether worn at a gala or a special celebration, it embodies grace and timeless elegance.'
-    // }
+    {
+      id: 6,
+      url: '../images/Accessories/Watch/watch-2.png',
+      name: 'Watch-6',
+      content: 'This luxurious Watch features intricate silver metalwork, meticulously framing three prominent elements: sparkling diamonds, a large pearl, and sleek sterling silver. Whether worn at a gala or a special celebration, it embodies grace and timeless elegance.'
+    }
   ];
 
 

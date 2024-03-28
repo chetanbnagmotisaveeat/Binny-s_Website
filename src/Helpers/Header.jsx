@@ -150,7 +150,7 @@ const Header = () => {
                                                 <CustomNavLink to="/heritage" onClick={handleClose}>Heritage</CustomNavLink>
                                                 <CustomNavLink to="/gallery" onClick={handleClose}>Gallery</CustomNavLink>
                                                 <CustomNavLink to="/our-Team" onClick={handleClose}>Our Team</CustomNavLink>
-                                                <CustomNavLink to="/store-locator" onClick={handleClose}>Store locator</CustomNavLink>
+                                                <CustomNavLink to="/store" onClick={handleClose}>Store locator</CustomNavLink>
                                                 <CustomNavLink to="/book-an-appointment" onClick={handleClose}>Book an Appointment</CustomNavLink>
                                                 <CustomNavLink to="/careers" onClick={handleClose}>Careers</CustomNavLink>
 

@@ -10,7 +10,7 @@ import { Button, NavLink } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
-const CustomProductsSubSectionSecond = ({ data }) => {
+const CustomProductsSubSectionSecond = ({ data ,size}) => {
 
     const [showFullContent, setShowFullContent] = useState(true);
 
@@ -35,6 +35,8 @@ const CustomProductsSubSectionSecond = ({ data }) => {
     };
 
     const currentImage = imagesArray[currentIndex];
+
+   
     return (
         <ThemeProvider
             breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
@@ -268,8 +270,14 @@ const CustomProductsSubSectionSecond = ({ data }) => {
                                                     <img
                                                         src={image.url}
                                                         alt={image.name}
-                                                        className="img-fluid img-responsive"
+                                                        className="img-fluid"
+                                                        style={{
+                                                            width: heading === 'Pens' || 'Watchs' || 'Belts'  ? '330px' : 'auto',
+                                                            height: heading === 'Pens' || 'Watchs'  || 'Belts' ? '330px' : 'auto',
+                                                        }}
+                                                        
                                                     />
+
                                                 </motion.div>
                                             ))}
                                         </motion.div>
