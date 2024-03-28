@@ -17,7 +17,7 @@ const Footer = () => {
     >
       <Container fluid className='footer-main-div mt-2'>
         {
-          (
+          !isSmallScreen ?  (
             <>
               <Row className='p-0 m-0 w-75'>
                 <Col xs={6} md={12} lg={3} className="d-flex position-relative p-0 m-0 w-100">
@@ -86,10 +86,6 @@ const Footer = () => {
                           <i className="bi bi-linkedin" ></i>
                         </div>
                       </div>
-                       
-                        
-                        
-
                       </Col>
                     </Row>
                   </Container>
@@ -97,6 +93,92 @@ const Footer = () => {
               </Row>
 
             </>
+          ):(
+            <>
+            {/* <Row className=''> */}
+              {/* <Col className="d-flex position-relative p-0 m-0 w-100"> */}
+                {/* <Container className='border border-1 border-primary' > */}
+                    <Row className='w-100 mt-1 text-light border border-1 border-primary' style={{gap:'3.1rem'}}>
+                    <Col  className='footer-gap border border-1 border-primary'  >
+                      <div className='footer-gap-div-small'>
+                        <div className='heading' >Services</div>
+                        <div className='second-div'>
+                          <ol>
+                            <li><NavLink to="/book-an-appointment">Book an appointment</NavLink></li>
+                          </ol>
+                        </div>
+                      </div>
+
+
+                    </Col>
+                    <Col className='footer-gap border border-1 border-primary'>
+                      <div className='footer-gap-div-small'>
+                      <div className='heading'>Corporate</div>
+                      <div className='second-div'>
+                        <ol>
+                          <li><NavLink to="/careers">Careers</NavLink></li>
+                        </ol>
+                      </div>
+
+                      </div>
+
+                    </Col>
+                    </Row>
+                    <Row className='w-100 mt-4 text-light border border-1 border-primary' style={{gap:'3.1rem'}}>
+                    <Col   className='footer-gap border border-1 border-primary'>
+                      <div  className='footer-gap-div-small'>
+                      <div className='heading'>Legal Terms</div>
+                      <div className='second-div'>
+                        <ol>
+                        
+                          <li><a href='https://www.canva.com/design/DAGAle3FpjA/GM9Ucie0gG7ZO8k4CFoswA/view?utm_content=DAGAle3FpjA&utm_campaign=designshare&utm_medium=link&utm_source=editor' target="_blank" >Terms of Use</a></li>
+                          <li><a href='https://www.canva.com/design/DAGAlHvNJ3c/uFneNodxnB_LwNbWSEa7nQ/view?utm_content=DAGAlHvNJ3c&utm_campaign=designshare&utm_medium=link&utm_source=editor' target="_blank" >Privacy Policy</a></li>
+                        </ol>
+                      </div>
+                      </div>
+                     
+
+                    </Col>
+                    <Col className='footer-gap border border-1 border-primary'>
+                     
+                      <div className='footer-gap-div-small'>
+                      <div className='heading'>About Us</div>
+                      <div className='second-div'>
+                        <ol>
+                          <li>About Us</li>
+                          <li>History</li>
+                        </ol>
+                      </div>
+                      </div>
+                    </Col>
+
+                    </Row>
+                
+                  <Row className='w-100 mt-4 text-light border border-1 border-primary' style={{gap:'3.1rem'}}>
+                    
+                    <Col className='footer-gap border border-1 border-primary ' > 
+                    <div className='footer '>
+                    <div className='footer-gap-icon-small '>
+                    <div className='heading'>Follow Us</div>
+                      <div className="icon  w-25">
+                        <a href='https://www.instagram.com/binnysjewellery/?hl=en' target="_blank" ><i className="bi bi-facebook ml-3" ></i></a>
+                        <i className="bi bi-twitter ml-3"></i>
+                        <i className="bi bi-instagram ml-3" ></i>
+                        <i className="bi bi-linkedin" ></i>
+                      </div>
+                    </div>
+
+                    </div>
+                    </Col>
+                    {/* <Col className='footer-gap border border-1 border-primary ' > 
+                   
+                    </Col> */}
+                  </Row>
+                {/* </Container> */}
+              {/* </Col> */}
+            {/* </Row> */}
+
+          </>
           )
         }
 
